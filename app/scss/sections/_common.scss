@@ -1,0 +1,159 @@
+#realme-c3-page{
+  padding-top: 30px;
+  font-family: 'Open Sans', sans-serif;
+
+  img, picture{
+    display: block;
+    max-width: 100%;
+  }
+
+  .img-holder{
+    width: 100%;
+
+    img, picture{
+      width: 100%
+    }
+
+    video{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .mold{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    img{
+      width: 100%;
+    }
+  }
+
+  .main-content{
+    text-align: center;
+
+    .section-title{
+      font-size: 3.125rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+    }
+
+    .section-sub-title{
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+
+    .section-desc{
+      font-size: 1.25rem;
+      line-height: 1.75;
+    }
+
+    @media #{$information-lg-screen}{
+      .section-title{
+        font-size: 2.434375rem;
+        margin-bottom: 1.35rem;
+      }
+
+      .section-sub-title{
+        font-size: 1.875rem;
+      }
+
+      .section-desc{
+        font-size: 0.9375rem;
+      }
+    }
+
+    @media #{$information-laptop}{
+      .section-title{
+        font-size: 2.15rem;
+        margin-bottom: 1.15rem;
+      }
+
+      .section-sub-title{
+        font-size: 1.65rem;
+      }
+
+      .section-desc{
+        font-size: 0.9rem;
+      }
+    }
+
+    @media #{$information-sm-laptop}{
+      .section-title{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .section-sub-title{
+        font-size: 1.45rem;
+      }
+
+      .section-desc{
+        font-size: 0.9rem;
+      }
+    }
+
+    @media #{$information-tablet}{
+      text-align: left;
+
+      .section-title{
+        font-size: 2rem;
+        margin-bottom: .6rem;
+      }
+
+      .section-sub-title{
+        font-size: 1.85rem;
+      }
+
+      .section-desc{
+        font-size: 1.1rem;
+        line-height: 1.75;
+      }
+    }
+
+    @media #{$information-phone}{
+      .section-title{
+        font-size: 1.5rem;
+        margin-bottom: .65rem;
+      }
+
+      .section-sub-title{
+        font-size: 1.35rem;
+      }
+
+      .section-desc{
+        font-size: .85rem;
+        line-height: 1.75;
+      }
+    }
+
+    @media #{$information-sm-phone}{
+      .section-title{
+        font-size: 1.35rem;
+        margin-bottom: .5rem;
+      }
+
+      .section-sub-title{
+        font-size: 1.15rem;
+      }
+
+      .section-desc{
+        font-size: .75rem;
+        line-height: 1.65;
+      }
+    }
+  }
+
+  .section-social-comment{
+    padding: 3rem 0 2rem;
+  }
+
+  @media #{$information-tablet}{
+    padding-top: 50px;
+  }
+}

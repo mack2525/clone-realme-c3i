@@ -1,0 +1,44 @@
+.section-disclaimer{
+  padding: 2.5rem 0 2rem;
+  color: #777;
+  font-size: 1.25rem;
+
+  .disclaimer-title{
+    font-size: 1.45rem;
+    color: #434343;
+  }
+
+  p{
+    margin-bottom: 1rem;
+    line-height: 1.95rem;
+  }
+
+  @media #{$information-laptop} {
+    font-size: 1.15rem;
+
+    .disclaimer-title{
+      font-size: 1.35rem;
+    }
+  }
+
+  @media #{$information-sm-laptop} {
+    font-size: 1.05rem;
+
+    .disclaimer-title{
+      font-size: 1.25rem;
+    }
+  }
+
+  @media #{$information-phone} {
+    font-size: .9rem;
+
+    .disclaimer-title{
+      font-size: 1.05rem;
+    }
+
+    p {
+      margin-bottom: .8rem;
+      line-height: 1.65rem;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="40px" viewBox="0 0 41 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>实心</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="1.43954944%" x2="50%" y2="97.0491976%" id="linearGradient-1">
+            <stop stop-color="#FF6565" offset="0%"></stop>
+            <stop stop-color="#AC0000" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="spec" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pc-spec-2560-green" transform="translate(-1700.000000, -355.000000)" fill="url(#linearGradient-1)">
+            <g id="1-首图" transform="translate(0.000000, -2.000000)">
+                <g id="color" transform="translate(1442.000000, 350.000000)">
+                    <g id="蓝复制" transform="translate(251.500000, 0.000000)">
+                        <circle id="实心" cx="27" cy="27" r="20"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

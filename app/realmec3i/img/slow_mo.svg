@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="47px" height="47px" viewBox="0 0 47 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>ic_slo-mo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="realme-C3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pc_2560_realme-C3(M8)" transform="translate(-1514.000000, -8489.000000)" stroke="#000000">
+            <g id="08_camera" transform="translate(0.000000, 7795.000000)">
+                <g id="text" transform="translate(1505.000000, 391.000000)">
+                    <g id="slo-mo" transform="translate(1.000000, 288.000000)">
+                        <g id="ic_slo-mo-60" transform="translate(0.000000, 10.000000)">
+                            <g id="Group-2" transform="translate(9.000000, 6.000000)">
+                                <circle id="Oval-2" stroke-width="2" cx="31" cy="31" r="14"></circle>
+                                <path d="M36.4309405,17.3638774 C34.0092984,13.2561122 29.5394726,10.5 24.4259222,10.5 C16.7348477,10.5 10.5,16.7348477 10.5,24.4259222 C10.5,29.5646158 13.2832824,34.053239 17.4245687,36.4665133" id="Path" stroke-width="2" opacity="0.800000012"></path>
+                                <path d="M28.9309405,11.3344806 C26.6960747,7.54353896 22.5709973,5 17.8518445,5 C10.7539668,5 5,10.7539668 5,17.8518445 C5,22.5942013 7.56861355,26.7366262 11.390491,28.9637697" id="Path" stroke-width="2" opacity="0.600000024"></path>
+                                <path d="M21.9309405,5.80508393 C19.882851,2.33096571 16.102522,2.84217094e-14 11.7777668,2.84217094e-14 C5.27308583,2.84217094e-14 0,5.27308583 0,11.7777668 C0,16.1237868 2.35394472,19.9200134 5.85641328,21.961026" id="Path" stroke-width="2" opacity="0.400000006"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

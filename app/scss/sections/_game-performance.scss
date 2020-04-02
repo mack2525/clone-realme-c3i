@@ -1,0 +1,160 @@
+#realme-c3-page {
+  .section-game-performance {
+    position: relative;
+
+    .main-content{
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 46.875%;
+      width: 35%;
+
+      .performance-detail{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+
+        .detail-title{
+          font-weight: 600;
+          font-size: 3.125rem;
+          margin-bottom: 1rem;
+        }
+
+        .detail-sub-title{
+          font-weight: 600;
+          font-size: 2.5rem;
+        }
+
+        .detail-meter{
+          margin-top: 2rem;
+
+          .detail-meter-item{
+            margin-bottom: 1.5rem;
+
+            .label{ font-size: 2rem; margin-bottom: 1rem; font-weight: 600; }
+            .value{ font-size: 2rem; margin-top: 0.15rem; font-weight: 600; }
+
+            .meter-pointer{
+              height: 42px;
+              width: 100%;
+              background-image: linear-gradient(to right, #5CFCFF, #414AFF);
+            }
+          }
+        }
+      }
+    }
+
+    @media #{$information-lg-screen}{
+      width: 1920px;
+      margin-left: calc((100% - 1920px) / 2);
+
+      .main-content{
+        .performance-detail{
+          .detail-title{
+            font-size: 2.34375rem;
+            margin-bottom: .75rem;
+          }
+
+          .detail-sub-title{
+            font-size: 1.875rem;
+          }
+
+          .detail-meter{
+            margin-top: 1.5rem;
+
+            .detail-meter-item{
+              margin-bottom: 1.125rem;
+
+              .label{ font-size: 1.5rem; margin-bottom: 0.75rem; font-weight: 600; }
+              .value{ font-size: 1.5rem; margin-top: 0.1125rem; font-weight: 600; }
+
+              .meter-pointer{
+                height: 31.5px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    /* === RESPONSIVE === */
+    @media #{$information-tablet}{
+      width: 100%;
+      margin-left: 0;
+
+      .main-content{
+        position: static;
+        width: 100%;
+
+        .performance-detail{
+          position: static;
+          padding: 4vw 30px;
+
+          .detail-title{
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+          }
+
+          .detail-sub-title{
+            font-size: 2rem;
+          }
+
+          .detail-meter{
+            margin-top: 1.5rem;
+
+            .detail-meter-item{
+              margin-bottom: 1.25rem;
+
+              .label{ font-size: 1.5rem; margin-bottom: 0.75rem; }
+              .value{ font-size: 1.5rem; margin-top: 0.15rem; }
+
+              .meter-pointer{
+                height: 38px;
+                width: 95%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media #{$information-phone}{
+      .main-content{
+        .performance-detail{
+          padding: 5vw 15px;
+
+          .detail-title{
+            font-size: 1.35rem;
+            margin-bottom: 0.75rem;
+          }
+
+          .detail-sub-title{
+            font-size: 1.15rem;
+          }
+
+          .detail-meter{
+            margin-top: 1.25rem;
+
+            .detail-meter-item{
+              margin-bottom: 1rem;
+
+              .label{ font-size: 1rem; margin-bottom: 0.45rem; }
+              .value{ font-size: 1rem; margin-top: 0.1rem; }
+
+              .meter-pointer{
+                height: 30px;
+                width: 95%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

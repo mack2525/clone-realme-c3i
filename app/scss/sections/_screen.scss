@@ -1,0 +1,235 @@
+#realme-c3-page {
+  .section-screen {
+    position: relative;
+    height: 48.828125vw;
+    overflow: hidden;
+
+    .curve-holder{
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      //transform: translateX(-100vw);
+      overflow: hidden;
+
+      &:after{
+        content: '';
+        position: absolute;
+        width: 15vw;
+        top: 0;
+        right: -10vw;
+        height: 100%;
+        background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1), rgba(255,255,255,1));
+      }
+
+      .curve-img-holder{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        //transform: translateX(100vw);
+      }
+    }
+
+    .phone-img{
+      position: absolute;
+      width: 29.8828125%;
+      top: 13.36%;
+      left: 46.875%;
+    }
+
+    .main-content{
+      width: 22%;
+      position: absolute;
+      top: 55%;
+      left: 25.78125%;
+
+      .screen-feature-list{
+        display: flex;
+
+        .feature-item{
+          flex-basis: 33.33%;
+
+          .value{
+            color: #33D5FF;
+            font-size: 3.125rem;
+            margin-bottom: 0;
+            line-height: 1.35;
+          }
+
+          .label{
+            color: $white;
+            font-size: 1.5rem;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+
+    @media #{$information-lg-screen}{
+      width: 1920px;
+      height: 937.5px;
+      margin-left: calc((100% - 1920px) / 2);
+
+      .main-content{
+        .screen-feature-list{
+          .feature-item{
+            .value{
+              font-size:2.34375rem;
+            }
+
+            .label{
+              font-size: 1.125rem;
+              line-height: 1.35;
+            }
+          }
+        }
+      }
+    }
+
+    /* === RESPONSIVE === */
+    @media #{$information-tablet}{
+      width: 100%;
+      margin-left: 0;
+      height: auto;
+
+      .curve-holder{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        overflow: hidden;
+
+        .curve-img-holder{
+          picture, img{
+            width: 100%;
+          }
+        }
+      }
+
+      .phone-img{
+        position: absolute;
+        width: 88.0555%;
+        top: 31.18932%;
+        left: 10.5555%;
+      }
+
+      .main-content{
+        width: 100%;
+        top: auto;
+        bottom: 8%;
+        left: 0;
+
+        &.mb-show{
+          top: 5%;
+          bottom: auto;
+          text-align: left;
+        }
+
+        .screen-feature-list{
+          .feature-item{
+            flex-basis: 33.33%;
+            text-align: center;
+
+            .value{
+              font-size: 2rem;
+              line-height: 1.25;
+            }
+
+            .label{
+              font-size: 1.25rem;
+              line-height: 1.5;
+              color: #222;
+            }
+          }
+        }
+      }
+    }
+
+    @media #{$information-phone}{
+      .main-content{
+        bottom: 6%;
+
+        &.mb-show{
+          top: 5%;
+          bottom: auto;
+        }
+
+        .screen-feature-list{
+          .feature-item{
+            flex-basis: 33.33%;
+            text-align: center;
+
+            .value{
+              font-size: 1.5rem;
+              line-height: 1.25;
+            }
+
+            .label{
+              font-size: 1rem;
+              line-height: 1.5;
+            }
+          }
+        }
+      }
+    }
+
+    @media #{$information-sm-phone}{
+      .main-content{
+        bottom: 6%;
+
+        &.mb-show{
+          top: 5%;
+          bottom: auto;
+        }
+
+        .screen-feature-list{
+          .feature-item{
+            flex-basis: 33.33%;
+            text-align: center;
+
+            .value{
+              font-size: 1.35rem;
+              line-height: 1.25;
+            }
+
+            .label{
+              font-size: 0.9rem;
+              line-height: 1.5;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes coverMove {
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+@keyframes imageMove {
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+@keyframes phoneMove {
+  0%{
+    transform: translate(-40vw, -20vw);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}

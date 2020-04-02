@@ -1,0 +1,324 @@
+#realme-c3-page{
+  .section-main-feature{
+    position: relative;
+    height: 33.203125vw;
+
+    .bg-holder{
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .main-content{
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+
+      .container{
+        height: 100%;
+        width: 1680px;
+
+        .layout-holder{
+          display: grid;
+          height: 100%;
+          grid-template-columns: 1.08fr 0.7fr 1fr;
+
+          .column{
+            &.left, &.right{
+              display: flex;
+              padding-top: 3.37vw;
+
+              .main-feature-list{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                text-align: left;
+
+                .main-feature-item{
+                  .feature-name{
+                    color: #222;
+                    font-size: 1.625rem;
+                    line-height: 2.1875rem;
+                    margin-bottom: 0.3rem;
+                    font-weight: 600;
+                    white-space: nowrap;
+                  }
+
+                  .feature-detail{
+                    color: #4D6C94;
+                    font-size: 1.25rem;
+                    line-height: 1.6875;
+                    white-space: nowrap;
+                  }
+                }
+              }
+            }
+
+            &.left{
+              padding-left: 29.5%;
+
+              .main-feature-list{
+                height: 22.3vw;
+              }
+            }
+
+            &.right{
+              padding-left: 12%;
+
+              .main-feature-list{
+                height: 23.75vw;
+              }
+            }
+
+            &.center{
+              position: relative;
+
+              .img-holder{
+                position: absolute;
+
+                &.phone-blue, &.phone-red{
+                  width: 51.5%
+                }
+
+                &.phone-blue{
+                  top: 8%;
+                  left: 5%;
+                }
+
+                &.phone-red{
+                  top: 28%;
+                  left: 42%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media #{$information-lg-screen} {
+      height: 637.5px;
+      width: 1920px;
+      margin-left: calc((100% - 1920px) / 2);
+
+      .main-content{
+        .container{
+          width: 1200px;
+
+          .layout-holder{
+            height: 100%;
+            grid-template-columns: 1.08fr 0.7fr 1fr;
+
+            .column{
+              &.left, &.right{
+                padding-top: 58.75px;
+
+                .main-feature-list{
+
+                  .main-feature-item{
+                    .feature-name{
+                      font-size: 1.21875rem;
+                      line-height: 1.640625rem;
+                      margin-bottom: 0.2rem;
+                    }
+
+                    .feature-detail{
+                      font-size: 0.9375rem;
+                      line-height: 1.6875rem;
+                    }
+                  }
+                }
+              }
+
+              &.left{
+                padding-left: 29.5%;
+
+                .main-feature-list{
+                  height: 431.25px;
+                }
+              }
+
+              &.right{
+                padding-left: 12%;
+
+                .main-feature-list{
+                  height: 454.5px;
+                }
+              }
+
+              &.center{
+                .img-holder{
+                  &.phone-blue, &.phone-red{
+                    width: 52%
+                  }
+
+                  &.phone-blue{
+                    top: 7.7%;
+                    left: 5%;
+                  }
+
+                  &.phone-red{
+                    top: 27%;
+                    left: 42%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    /* === RESPONSIVE === */
+    @media #{$information-tablet}{
+      width: 100%;
+      height: auto;
+      margin-left: 0;
+
+      .main-content{
+        .container{
+          height: 100%;
+          width: 100%;
+
+          .layout-holder{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+
+            .column{
+              &.left, &.right{
+                padding-top: 0;
+                padding-left: 0;
+                display: flex;
+                align-items: center;
+
+                .main-feature-list{
+                  height: 80%;
+                  justify-content: space-around;
+                  flex: 1;
+
+                  .main-feature-item{
+                    .feature-name{
+                      font-size: 1.55rem;
+                      line-height: 2;
+                      margin-bottom: 0.3rem;
+                    }
+
+                    .feature-detail{
+                      font-size: 1.35rem;
+                      line-height: 1.6875;
+                    }
+                  }
+                }
+
+                .phone-img-holder{
+                  width: 48%;
+                  flex-shrink: 0;
+                  display: flex !important;
+                  justify-content: center;
+                  align-items: center;
+
+                  img{
+                    width: 70%;
+                    margin: auto;
+                  }
+                }
+              }
+
+              &.left{
+                padding-left: 0;
+
+                .main-feature-list{
+                  height: 80%;
+                  text-align: left;
+                }
+              }
+
+              &.right{
+                padding-left: 0;
+
+                .main-feature-list{
+                  height: 80%;
+                  text-align: right;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media #{$information-phone}{
+      .main-content{
+        .container{
+          .layout-holder{
+            .column{
+              &.left, &.right{
+                .main-feature-list{
+                  width: 52%;
+                  flex-shrink: 0;
+
+                  .main-feature-item{
+                    .feature-name{
+                      font-size: 0.95rem;
+                      line-height: 1.35;
+                      margin-bottom: 0.1rem;
+                    }
+
+                    .feature-detail{
+                      font-size: 0.8rem;
+                      line-height: 1.3;
+                    }
+                  }
+                }
+
+                .phone-img-holder{
+                  width: 48%;
+                }
+              }
+
+              &.left{
+                .main-feature-list{
+                  height: 90%;
+                }
+              }
+
+              &.right{
+                .main-feature-list{
+                  height: 90%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @media #{$information-sm-phone}{
+      .main-content{
+        .container{
+          .layout-holder{
+            .column{
+              &.left, &.right{
+                .main-feature-list{
+                  .main-feature-item{
+                    .feature-name{
+                      font-size: 0.9rem;
+                      line-height: 1.35;
+                      margin-bottom: 0.1rem;
+                    }
+
+                    .feature-detail{
+                      font-size: 0.75rem;
+                      line-height: 1.3;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

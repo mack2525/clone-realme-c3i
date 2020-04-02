@@ -1,0 +1,169 @@
+#realme-c3-page {
+  .section-colors {
+    padding: 5vw 0 4.6875vw;
+
+    .container{
+      .colors-img-holder{
+        position: relative;
+
+        .mold{
+          visibility: hidden;
+          position: static;
+
+          img{
+            width: 100%;
+          }
+        }
+
+        .color-holder{
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          transition: all ease-out 150ms;
+          opacity: 0;
+
+          &.active{
+            opacity: 1;
+          }
+
+          img{
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+
+      .colors-toggle{
+        text-align: center;
+        font-size: 1.875rem;
+        font-weight: 600;
+        padding: 3.7rem 0;
+
+        .select-devide{
+          padding: 0 1.5rem;
+        }
+
+        .select-option{
+          opacity: 0.3;
+          transition: all ease-out 150ms;
+          cursor: pointer;
+
+          &.active{
+            opacity: 1;
+          }
+        }
+      }
+
+      .color-sub{
+        position: relative;
+        font-size: 1.25rem;
+        text-align: center;
+
+        .mold{
+          position: static;
+          visibility: hidden;
+        }
+
+        .color-sub-item{
+          position: absolute;
+          width: 100%;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          transition: all ease-out 150ms;
+
+          &.active{
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    @media #{$information-lg-screen}{
+      padding: 97.5px 0 90px;
+
+      .container{
+        .colors-toggle{
+          font-size: 1.40625rem;
+          padding: 2.775rem 0;
+
+          .select-devide{
+            padding: 0 1.125rem;
+          }
+        }
+
+        .color-sub{
+          font-size: 0.9375rem;
+        }
+      }
+    }
+
+    @media #{$information-tablet}{
+      padding: 0 0 8vw;
+
+      .container{
+        padding: 0;
+
+        .colors-toggle{
+          font-size: 1.75rem;
+          padding: 2.7rem 0;
+
+          .select-devide{
+            padding: 0 1.35rem;
+          }
+        }
+
+        .color-sub{
+          padding: 0 15px;
+          font-size: 1rem;
+
+          .color-sub-item{
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+
+    @media #{$information-phone}{
+      padding: 0 0 18vw;
+
+      .container{
+        .colors-toggle{
+          font-size: 1.25rem;
+          padding: 2.5rem 0;
+
+          .select-devide{
+            padding: 0 0.7rem;
+          }
+        }
+
+        .color-sub{
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    @media #{$information-sm-phone}{
+      padding: 0 0 15vw;
+
+      .container{
+        .colors-toggle{
+          font-size: 1.15rem;
+          padding: 2.2rem 0;
+
+          .select-devide{
+            padding: 0 0.5rem;
+          }
+        }
+
+        .color-sub{
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+}

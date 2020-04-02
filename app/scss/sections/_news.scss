@@ -1,0 +1,493 @@
+#realme-c3-page{
+  .section-phone-review{
+    padding: 2.734375vw 0 4vw;
+
+    .heading{
+      text-align: center;
+      font-size: 2.5rem;
+      padding-bottom: 2rem;
+    }
+
+    // News Slider
+    .review-slider-holder{
+      .news-slider{
+        position: relative;
+
+        .news-item{
+          padding: 0 10px;
+          cursor: pointer;
+
+          .news-link-wrapper{
+            display: block;
+            background-color: rgba(0,0,0,0.45);
+            border-radius: 30px;
+            border: 5px solid #ffc915;
+            padding: 20px;
+
+
+            .news-thumbnail{
+              background-color: $white;
+              margin-bottom: 22px;
+              overflow: hidden;
+              border-radius: 20px;
+              height: 240px;
+
+              img{
+                min-width: 100%;
+                min-height: 100%;
+                object-fit: cover;
+                object-position: center;
+              }
+            }
+
+            .news-context{
+              height: 240px;
+              overflow: hidden;
+
+              .news-title, .news-date, .news-desc{
+                margin-top: 0;
+                margin-bottom: 12px;
+                text-align: left;
+              }
+
+              .news-title{
+                font-weight: 800;
+                font-size: 1.25rem;
+                color: $white;
+              }
+
+              .news-date{
+                color: $main-color;
+                font-weight: 800;
+                font-size: 1.25rem;
+              }
+
+              .news-desc{
+                font-size: 1rem;
+                line-height: 1.42rem;
+                color: $white;
+              }
+            }
+          }
+        }
+
+        .slick-control{
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          border-radius: 2px;
+          border: 4px solid #333;
+          -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+          top: calc(50% - 15px);
+          background-color: transparent;
+          outline: none;
+
+          &.slick-next{
+            border-left: none;
+            border-bottom: none;
+            right: -20px;
+            animation: slickButtonFloat 0.75s 0.375s infinite linear ;
+          }
+
+          &.slick-prev{
+            border-right: none;
+            border-top: none;
+            left: -20px;
+            animation: slickButtonFloat 0.75s infinite linear;
+          }
+        }
+      }
+    }
+
+    .realme-c3-explore{
+      padding-top: 4rem;
+
+      .seemore{
+        font-size: 1.875rem;
+        color: #FFD271;
+        font-weight: 600;
+        width: 100%;
+        text-align: center;
+
+        .plus-sign{
+          &:after{
+            content: '+';
+            color: #FFD271;
+            font-size: 2.25rem;
+          }
+        }
+      }
+    }
+
+    @media #{$information-lg-screen}{
+      .heading{
+        font-size: 1.875rem;
+      }
+    }
+  }
+
+  @media (max-width: 1680px){
+    .phone-review {
+      .review-slider-holder {
+        .news-slider {
+          .news-item {
+            padding: 0 8px;
+
+            .news-link-wrapper {
+              border-radius: 24px;
+              border: 4px solid $white;
+              padding: 17px;
+
+
+              .news-thumbnail {
+                margin-bottom: 18px;
+                border-radius: 16px;
+                height: 220px;
+              }
+
+              .news-context {
+                height: 220px;
+
+                .news-title, .news-date, .news-desc {
+                  margin-top: 0;
+                  margin-bottom: 10px;
+                }
+
+                .news-title {
+                  font-size: 1.2em;
+                }
+
+                .news-date {
+                  font-size: 1.2em;
+                }
+
+                .news-desc {
+                  font-size: 0.95em;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1540px){
+    .phone-review {
+      .review-slider-holder{
+        .news-slider{
+          .news-item{
+            padding: 0 8px;
+
+            .news-link-wrapper{
+              border-radius: 20px;
+              border: 3px solid $white;
+              padding: 15px;
+
+              .news-thumbnail{
+                margin-bottom: 15px;
+                border-radius: 13px;
+                height: 220px;
+              }
+
+              .news-context{
+                height: 220px;
+
+                .news-title, .news-date, .news-desc{
+                  margin-top: 0;
+                  margin-bottom: 10px;
+                }
+
+                .news-title{
+                  font-size: 1.15em;
+                }
+
+                .news-date{
+                  font-size: 1.15em;
+                }
+
+                .news-desc{
+                  font-size: 0.95em;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media #{$information-laptop}{
+    .phone-review{
+      .review-slider-holder{
+        .news-slider{
+          .news-item{
+            padding: 0 8px;
+
+            .news-link-wrapper{
+              border-radius: 18px;
+              border: 2px solid $white;
+              padding: 12px;
+
+              .news-thumbnail{
+                margin-bottom: 15px;
+                border-radius: 13px;
+                height: 180px;
+              }
+
+              .news-context{
+                height: 200px;
+
+                .news-title, .news-date, .news-desc{
+                  margin-bottom: 8px;
+                }
+
+                .news-title{
+                  font-size: 1em;
+                }
+
+                .news-date{
+                  font-size: 1em;
+                }
+
+                .news-desc{
+                  font-size: 0.85em;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media #{$information-sm-laptop}{
+    .phone-review{
+      .review-slider-holder{
+        .news-slider{
+          .news-item{
+            padding: 0 8px;
+
+            .news-link-wrapper{
+              border-radius: 18px;
+              border: 2px solid $white;
+              padding: 12px;
+
+              .news-thumbnail{
+                margin-bottom: 15px;
+                border-radius: 10px;
+                height: 160px;
+              }
+
+              .news-context{
+                height: 190px;
+
+                .news-title, .news-date, .news-desc{
+                  margin-bottom: 8px;
+                }
+
+                .news-title{
+                  font-size: 0.95em;
+                }
+
+                .news-date{
+                  font-size: 0.95em;
+                }
+
+                .news-desc{
+                  font-size: 0.8em;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* == RESPONSIVE === */
+  @media #{$information-tablet}{
+    .section-phone-review{
+      padding: 10vw 30px 14vw;
+
+      .heading{
+        padding-bottom: 1.5rem;
+
+        .section-title {
+          font-size: 1.7rem;
+        }
+      }
+
+      // News Slider
+      .review-slider-holder{
+        .news-slider{
+          .news-item{
+            .news-link-wrapper{
+              border-radius: 22px;
+              border: 3px solid #ffc915;
+              padding: 15px;
+
+
+              .news-thumbnail{
+                background-color: $white;
+                margin-bottom: 22px;
+                overflow: hidden;
+                border-radius: 15px;
+                height: 200px;
+              }
+
+              .news-context{
+                height: 220px;
+                overflow: hidden;
+
+                .news-title, .news-date, .news-desc{
+                  margin-bottom: 10px;
+                }
+
+                .news-title{
+                  font-size: 1.05rem;
+                }
+
+                .news-date{
+                  font-size: 1.05rem;
+                }
+
+                .news-desc{
+                  font-size: 0.9rem;
+                  line-height: 1.42rem;
+                }
+              }
+            }
+          }
+
+          .slick-control{
+            width: 24px;
+            height: 24px;
+            border-radius: 2px;
+            border: 3px solid #333;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            top: calc(50% - 12px);
+
+            &.slick-next{
+              border-left: none;
+              border-bottom: none;
+              right: -18px;
+            }
+
+            &.slick-prev{
+              border-right: none;
+              border-top: none;
+              left: -18px;
+            }
+          }
+        }
+      }
+
+      .realme-c3-explore{
+        padding-top: 2rem;
+
+        .seemore{
+          font-size: 1.875rem;
+
+          .plus-sign{
+            &:after{
+              content: '+';
+              font-size: 2.25rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media #{$information-phone}{
+    .section-phone-review{
+      .realme-c3-explore{
+        .seemore{
+          font-size: 1.25rem;
+
+          .plus-sign{
+            &:after{
+              font-size: 1.65rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media #{$information-sm-phone}{
+    .section-phone-review{
+      padding: 10vw 20px 14vw;
+
+      .heading{
+        .section-title{
+          font-size: 1.25rem;
+        }
+      }
+
+      // News Slider
+      .review-slider-holder{
+        .news-slider{
+          .news-item{
+            .news-link-wrapper{
+              border-radius: 18px;
+              border: 3px solid #ffc915;
+              padding: 13px;
+
+
+              .news-thumbnail{
+                background-color: $white;
+                margin-bottom: 18px;
+                border-radius: 12px;
+                height: 190px;
+              }
+
+              .news-context{
+                height: 190px;
+                overflow: hidden;
+
+                .news-title, .news-date, .news-desc{
+                  margin-bottom: 10px;
+                }
+
+                .news-title{
+                  font-size: .95rem;
+                }
+
+                .news-date{
+                  font-size: .95rem;
+                }
+
+                .news-desc{
+                  font-size: 0.8rem;
+                  line-height: 1.42rem;
+                }
+              }
+            }
+          }
+
+          .slick-control{
+            width: 20px;
+            height: 20px;
+            border-radius: 2px;
+            top: calc(50% - 10px);
+
+            &.slick-next{
+              right: -14px;
+            }
+
+            &.slick-prev{
+              left: -14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes slickButtonFloat {
+  0%{ transform: translateX(0) rotate(45deg) }
+  25%{ transform: translateX(-1px) rotate(45deg) }
+  50%{ transform: translateX(0) rotate(45deg) }
+  75%{ transform: translateX(1px) rotate(45deg) }
+  100%{ transform: translateX(0) rotate(45deg) }
+}

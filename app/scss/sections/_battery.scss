@@ -1,0 +1,363 @@
+#realme-c3-page {
+  .section-battery {
+    position: relative;
+    background-color: #03B6EE;
+
+    .phone-img{
+      position: absolute;
+      width: 59.140625%;
+      bottom: 6.9667%;
+      left: 20.4296875%;
+    }
+
+    .main-content{
+      position: absolute;
+      top: 5.98027%;
+      width: 100%;
+
+      .section-title{
+        margin-bottom: 0;
+      }
+
+      .section-sub-title{
+        margin-bottom: 2rem;
+      }
+    }
+
+    .battery-features{
+      position: absolute;
+      bottom: 4%;
+      width: 40%;
+      left: 30%;
+
+      .battery-feature-list {
+        display: flex;
+        flex-wrap: wrap;
+
+        .feature-item{
+          width: 33.33%;
+          flex-basis: 33.33%;
+          margin-bottom: 2rem;
+
+          .feature-sub-title{
+            font-size: 1.75rem;
+          }
+
+          .feature-title{
+            font-size: 3rem;
+            line-height: 1.15;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+          }
+
+          .meter{
+            width: 82%;
+            height: 14px;
+            position: relative;
+
+            .metter-holder{
+              width: 100%;
+              height: 100%;
+              border-radius: 7px;
+              background-color: #76BCFD;
+            }
+
+            .metter-pointer{
+              z-index: 2;
+              width: 40%;
+              position: absolute;
+              left: 0;
+              top: 0;
+              background-color: #69FFFF;
+              background: linear-gradient(to right, #69FFFF, #3AD9FF);
+              height: 100%;
+              border-radius: 7px;
+            }
+          }
+        }
+      }
+    }
+
+    @media #{$information-lg-screen}{
+      width: 1920px;
+      margin-left: calc((100% - 1920px) / 2);
+
+      .main-content{
+        .section-title{
+          margin-bottom: 0;
+        }
+
+        .section-sub-title{
+          margin-bottom: 1.5rem;
+        }
+      }
+
+      .battery-features{
+        .battery-feature-list {
+          .feature-item{
+            margin-bottom: 1.5rem;
+
+            .feature-sub-title{
+              font-size: 1.3125rem;
+            }
+
+            .feature-title{
+              font-size: 2.25rem;
+              margin-bottom: 1.125rem;
+            }
+
+            .meter{
+              width: 82%;
+              height: 10px;
+
+              .metter-holder{
+                border-radius: 5px;
+              }
+
+              .metter-pointer{
+                border-radius: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media #{$information-laptop}{
+      width: 1680px;
+      margin-left: calc((100% - 1680px) / 2);
+
+      .battery-features{
+        .battery-feature-list {
+          .feature-item{
+            margin-bottom: 1.35rem;
+
+            .feature-sub-title{
+              font-size: 1rem;
+            }
+
+            .feature-title{
+              font-size: 1.75rem;
+              margin-bottom: 1rem;
+            }
+
+            .meter{
+              height: 8px;
+
+              .metter-holder{
+                border-radius: 4px;
+              }
+
+              .metter-pointer{
+                border-radius: 4px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media #{$information-sm-laptop}{
+      width: 1440px;
+      margin-left: calc((100% - 1440px) / 2);
+
+      .battery-features{
+        .battery-feature-list {
+          .feature-item{
+            margin-bottom: 1.25rem;
+
+            .feature-sub-title{
+              font-size: 0.9rem;
+            }
+
+            .feature-title{
+              font-size: 1.55rem;
+              margin-bottom: 0.9rem;
+            }
+
+            .meter{
+              height: 8px;
+
+              .metter-holder{
+                border-radius: 4px;
+              }
+
+              .metter-pointer{
+                border-radius: 4px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    /* === RESPONSIVE === */
+    @media #{$information-tablet}{
+      width: 100%;
+      margin-left: 0;
+
+      .phone-img{
+        position: absolute;
+        width: 100%;
+        bottom: 34.83%;
+        left: 0;
+      }
+
+      .main-content{
+        top: 7%;
+        width: 100%;
+
+        .section-title{
+          margin-bottom: 0;
+        }
+
+        .section-sub-title{
+          margin-bottom: 2rem;
+        }
+      }
+
+      .battery-features{
+        bottom: 6%;
+        width: 100%;
+        left: 0;
+
+        .battery-feature-list {
+          .feature-item{
+            width: 50%;
+            flex-basis: 50%;
+            padding: 0 6%;
+            margin-bottom: 7vw;
+
+            .feature-sub-title{
+              font-size: 1.35rem;
+            }
+
+            .feature-title{
+              font-size: 2rem;
+              line-height: 1.15;
+              margin-bottom: 1.05rem;
+            }
+
+            .meter{
+              width: 100%;
+              height: 12px;
+              position: relative;
+
+              .metter-holder{
+                border-radius: 6px;
+              }
+
+              .metter-pointer{
+                border-radius: 6px;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media #{$information-phone}{
+      width: 100%;
+      margin-left: 0;
+
+      .phone-img{
+        position: absolute;
+        width: 100%;
+        bottom: 34.83%;
+        left: 0;
+      }
+
+      .main-content{
+        top: 7%;
+        width: 100%;
+
+        .section-title{
+          margin-bottom: 0;
+        }
+
+        .section-sub-title{
+          margin-bottom: 1rem;
+        }
+      }
+
+      .battery-features{
+        .battery-feature-list {
+          .feature-item{
+            width: 50%;
+            flex-basis: 50%;
+            padding: 0 4%;
+            margin-bottom: 9vw;
+
+            .feature-sub-title{
+              font-size: 1rem;
+            }
+
+            .feature-title{
+              font-size: 1.25rem;
+              line-height: 1.15;
+              margin-bottom: .5rem;
+            }
+
+            .meter{
+              height: 8px;
+
+              .metter-holder{
+                border-radius: 4px;
+              }
+
+              .metter-pointer{
+                border-radius: 4px;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media #{$information-sm-phone}{
+      .main-content{
+        top: 7%;
+        width: 100%;
+
+        .section-title{
+          margin-bottom: 0;
+        }
+
+        .section-sub-title{
+          margin-bottom: 1rem;
+        }
+      }
+
+      .battery-features{
+        .battery-feature-list {
+          .feature-item{
+            width: 50%;
+            flex-basis: 50%;
+            padding: 0 4%;
+            margin-bottom: 9vw;
+
+            .feature-sub-title{
+              font-size: 1rem;
+            }
+
+            .feature-title{
+              font-size: 1.25rem;
+              line-height: 1.15;
+              margin-bottom: .5rem;
+            }
+
+            .meter{
+              height: 6px;
+
+              .metter-holder{
+                border-radius: 3px;
+              }
+
+              .metter-pointer{
+                border-radius: 3px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

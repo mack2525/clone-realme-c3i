@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="51px" height="51px" viewBox="0 0 51 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="realme-C3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pc_2560_realme-C3(M8)" transform="translate(-1512.000000, -8200.000000)" stroke="#000000" stroke-width="2.8">
+            <g id="08_camera" transform="translate(0.000000, 7795.000000)">
+                <g id="text" transform="translate(1505.000000, 391.000000)">
+                    <g id="portrait" transform="translate(9.000000, 0.000000)">
+                        <g id="icon" transform="translate(0.000000, 16.000000)">
+                            <g id="编组" transform="translate(27.800000, 18.900000) scale(-1, 1) rotate(-180.000000) translate(-27.800000, -18.900000) translate(23.800000, 15.400000)">
+                                <path d="M5.65690918,4.38508301 C4.92868337,5.27730419 4.25428506,5.81321462 3.26638184,6.3 C2.34396248,6.75267104 1.06467742,7 0,7" id="Stroke-1"></path>
+                                <path d="M7.39581309,-3.55271368e-15 C7.39581309,0.986258278 7.18192617,1.86247268 6.78432617,2.73283691" id="Stroke-3"></path>
+                            </g>
+                            <path d="M37.8,23.8 C37.8,31.5320482 31.5306988,37.8 23.8,37.8 C16.0693012,37.8 9.8,31.5320482 9.8,23.8 C9.8,16.0679518 16.0693012,9.8 23.8,9.8 C31.5306988,9.8 37.8,16.0679518 37.8,23.8 Z" id="Stroke-5"></path>
+                            <path d="M47.6,23.8 C47.6,36.9444 36.9444,47.6 23.8,47.6 C10.6556,47.6 0,36.9444 0,23.8 C0,10.6556 10.6556,0 23.8,0 C36.9444,0 47.6,10.6556 47.6,23.8 Z" id="Stroke-7"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

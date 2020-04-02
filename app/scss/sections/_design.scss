@@ -1,0 +1,45 @@
+#realme-c3-page {
+  .section-design {
+    position: relative;
+    overflow: hidden;
+
+    .main-content{
+      top: 3.5vw;
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
+
+    .phone-img{
+      position: absolute;
+      bottom: 0;
+      width: 37.5%;
+      left: 32.03125%;
+    }
+
+    @media #{$information-lg-screen}{
+      width: 1920px;
+      margin-left: calc((100% - 1920px) / 2);
+
+      .main-content{
+        top: 67.5px;
+      }
+    }
+
+    /* === RESPONSIVE === */
+    @media #{$information-tablet}{
+      width: 100%;
+      margin-left: 0;
+
+      .main-content{
+        top: 10vw;
+      }
+
+      .phone-img{
+        bottom: 0;
+        width: 96.5%;
+        left: 3.5%;
+      }
+    }
+  }
+}

@@ -1,0 +1,309 @@
+#realme-c3-page {
+  .section-camera-intro {
+    position: relative;
+    height: 44.140625vw;
+    overflow: hidden;
+
+    .bg-holder{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    .main-content{
+      position: absolute;
+      top: 3.25vw;
+      left: 0;
+      right: 0;
+    }
+
+    .effect-holder{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      .phone-img, .lens-img, .camera-feature-list{
+        position: absolute;
+      }
+
+      .phone-img{
+        width: 22.5%;
+        left: 36.71875%;
+        bottom: 0;
+      }
+
+      .lens-img{
+        width: 17.5%;
+        position: absolute;
+        left: 22.3%;
+        bottom: 33.3%;
+
+        .mold{
+          width: 100%;
+          opacity: 0.95;
+          position: static;
+          visibility: hidden;
+        }
+
+        .cam-lens-img{
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+
+          .lens-holder{
+            position: absolute;
+          }
+
+          &.cam-1{
+            .lens-holder{
+              &.lens-1{ top: 1.7%; right: 14.4%; width: 9.5% }
+              &.lens-2{ top: 0.7%; right: 25%; width: 9.2% }
+              &.lens-3{ top: 1%; right: 35.8%; width: 9.7% }
+              &.lens-4{ top: 1.2%; right: 46.5%; width: 9% }
+              &.lens-5{ top: 0.1%; right: 57.5%; width: 9.4% }
+            }
+          }
+
+          &.cam-2{
+            .lens-holder{
+              &.lens-base{ top: 32.2%; right: 0; width: 18% }
+              &.lens-1{ top: 31.7%; right: 11.7%; width: 16.5% }
+              &.lens-2{ top: 33.5%; right: 30%; width: 15% }
+              &.lens-3{ top: 34.4%; right: 45.5%; width: 14.2% }
+              &.lens-4{ top: 35.2%; right: 60.2%; width: 12.5% }
+              &.lens-5{ top: 36.5%; right: 74.7%; width: 11.7% }
+              &.lens-6{ top: 36%; right: 88%; width: 12% }
+            }
+          }
+
+          &.cam-3{
+            .lens-holder{
+              &.lens-1{ top: 81.6%; right: 14%; width: 9.9%; }
+              &.lens-2{ top: 82.3%; right: 25.5%; width: 8.7%; }
+              &.lens-3{ top: 81.7%; right: 35%; width: 9.5%; }
+              &.lens-4{ top: 81.7%; right: 46%; width: 9.2%; }
+              &.lens-5{ top: 81.8%; right: 57%; width: 8.7%; }
+            }
+          }
+        }
+      }
+
+      .camera-feature-list{
+        position: absolute;
+        width: 12.5%;
+        height: 48.67%;
+        bottom: 12.212%;
+        left: 61.1328%;
+
+        .feature-list-holder{
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .feature-item{
+            display: flex;
+            align-items: center;
+
+            .ico-holder{
+              width: 33%;
+              flex-basis: 33%;
+              flex-shrink: 0;
+
+              .img-holder{
+                width: 55%;
+                margin: auto;
+              }
+            }
+
+            .feature-detail{
+              .feature-title{
+                font-size: 2.375rem;
+                line-height: 1.05;
+                margin-bottom: 0.22rem;
+                font-weight: 600;
+                white-space: nowrap;
+              }
+
+              .feature-desc{
+                font-size: 1.25em;
+                white-space: nowrap;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media #{$information-lg-screen}{
+    .section-camera-intro {
+      width: 1920px;
+      margin-left: calc((100% - 1920px) / 2);
+      height: 847.5px;
+
+      .main-content {
+        top: 52px;
+      }
+
+      .effect-holder {
+        .camera-feature-list {
+          .feature-list-holder {
+            .feature-item {
+              .feature-detail {
+                .feature-title {
+                  font-size: 1.78125rem;
+                }
+
+                .feature-desc {
+                  font-size: 0.9375em;
+                  white-space: nowrap;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* === RESPONSIVE === */
+  @media #{$information-tablet}{
+    .section-camera-intro {
+      width: 100%;
+      margin-left: 0;
+      height: auto;
+
+      .bg-holder{
+        position: static;
+      }
+
+      .main-content{
+        position: absolute;
+        top: 8vw;
+        left: 0;
+        right: 0;
+        text-align: left;
+
+        .camera-feature-list{
+          width: 100%;
+          margin-top: 1.2rem;
+
+          .feature-list-holder{
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .feature-item{
+              display: flex;
+              align-items: center;
+              flex-basis: 50%;
+              width: 50%;
+              margin-bottom: 1rem;
+
+              .ico-holder{
+                width: 28%;
+                flex-basis: 28%;
+                flex-shrink: 0;
+
+                .img-holder{
+                  width: 55%;
+                  margin: auto;
+                }
+              }
+
+              .feature-detail{
+                .feature-title{
+                  font-size: 1rem;
+                  line-height: 1.05;
+                  font-weight: 600;
+                  margin-bottom: 0.4rem;
+                }
+
+                .feature-desc{
+                  font-size: .75rem;
+                  line-height: 1.35;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .effect-holder{
+        .phone-img{
+          width: 54.1666%;
+          left: 41.6666%;
+          bottom: 0;
+        }
+
+        .lens-img{
+          width: 45%;
+          left: 4.4444%;
+          bottom: 18.6666%;
+
+          .mold{
+            width: 100%;
+            //opacity: 0.95;
+            position: static;
+            visibility: hidden;
+          }
+
+          .cam-lens-img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+
+            .lens-holder{
+              position: absolute;
+            }
+
+            &.cam-1{
+              .lens-holder{
+                &.lens-1{ top: 1.7%; right: 14.4%; width: 9.5% }
+                &.lens-2{ top: 0.7%; right: 25%; width: 9.2% }
+                &.lens-3{ top: 1%; right: 35.8%; width: 9.7% }
+                &.lens-4{ top: 1.2%; right: 46.5%; width: 9% }
+                &.lens-5{ top: 0.1%; right: 57.5%; width: 9.4% }
+              }
+            }
+
+            &.cam-2{
+              .lens-holder{
+                &.lens-base{ top: 32.2%; right: 0; width: 18% }
+                &.lens-1{ top: 31.7%; right: 12.3%; width: 16.5% }
+                &.lens-2{ top: 33.5%; right: 30%; width: 15% }
+                &.lens-3{ top: 34.4%; right: 45.5%; width: 14.2% }
+                &.lens-4{ top: 35.2%; right: 60.2%; width: 12.5% }
+                &.lens-5{ top: 36.5%; right: 74.7%; width: 11.7% }
+                &.lens-6{ top: 36%; right: 88%; width: 12% }
+              }
+            }
+
+            &.cam-3{
+              .lens-holder{
+                &.lens-1{ top: 81.6%; right: 14%; width: 9.9%; }
+                &.lens-2{ top: 82.3%; right: 25.5%; width: 8.7%; }
+                &.lens-3{ top: 81.7%; right: 35%; width: 9.5%; }
+                &.lens-4{ top: 81.7%; right: 46%; width: 9.2%; }
+                &.lens-5{ top: 81.8%; right: 57%; width: 8.7%; }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media #{$information-phone}{}
+  @media #{$information-sm-phone}{}
+}

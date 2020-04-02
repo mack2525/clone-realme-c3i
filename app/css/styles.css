@@ -1,0 +1,4322 @@
+/* =======================================
+ * COLOR
+ /* ======================================= */
+/* =======================================
+ * OTHERS
+ /* ======================================= */
+/* =======================================
+ * RESPONSIVE MARK
+ /* ======================================= */
+/* USAGE */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap");
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+body, html {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+  overflow-x: hidden; }
+  body *, html * {
+    box-sizing: border-box; }
+  body .main-content, html .main-content {
+    max-width: 100%;
+    width: 1600px;
+    margin: auto; }
+    @media only screen and (max-width: 1680px) {
+      body .main-content, html .main-content {
+        width: 1200px; } }
+  body .container, html .container {
+    max-width: 100%;
+    width: 1200px;
+    margin: auto; }
+  body .main-content .phone-feature-list, html .main-content .phone-feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    /* === RESPONSIVE === */ }
+    body .main-content .phone-feature-list .phone-feature-item, html .main-content .phone-feature-list .phone-feature-item {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      flex-basis: 100%;
+      margin-bottom: 40px; }
+      body .main-content .phone-feature-list .phone-feature-item .feature-icon, html .main-content .phone-feature-list .phone-feature-item .feature-icon {
+        width: 45px;
+        margin-right: 15px;
+        height: 100%;
+        display: flex;
+        align-items: center; }
+        body .main-content .phone-feature-list .phone-feature-item .feature-icon img, html .main-content .phone-feature-list .phone-feature-item .feature-icon img {
+          width: 100%; }
+      body .main-content .phone-feature-list .phone-feature-item .feature-description, html .main-content .phone-feature-list .phone-feature-item .feature-description {
+        text-align: left; }
+        body .main-content .phone-feature-list .phone-feature-item .feature-description .feature-name, html .main-content .phone-feature-list .phone-feature-item .feature-description .feature-name {
+          font-size: 24px;
+          line-height: 32px; }
+        body .main-content .phone-feature-list .phone-feature-item .feature-description .feature-desc, html .main-content .phone-feature-list .phone-feature-item .feature-description .feature-desc {
+          opacity: 0.7;
+          font-size: 14px; }
+    body .main-content .phone-feature-list.layout-2, html .main-content .phone-feature-list.layout-2 {
+      flex-wrap: wrap; }
+      body .main-content .phone-feature-list.layout-2 .phone-feature-item, html .main-content .phone-feature-list.layout-2 .phone-feature-item {
+        width: 50%;
+        flex-basis: 50%;
+        flex-shrink: 0; }
+    @media only screen and (max-width: 1680px) {
+      body .main-content .phone-feature-list, html .main-content .phone-feature-list {
+        margin-top: 24px; }
+        body .main-content .phone-feature-list .phone-feature-item, html .main-content .phone-feature-list .phone-feature-item {
+          margin-bottom: 30px; }
+          body .main-content .phone-feature-list .phone-feature-item .feature-icon, html .main-content .phone-feature-list .phone-feature-item .feature-icon {
+            width: 34px;
+            margin-right: 10px; }
+          body .main-content .phone-feature-list .phone-feature-item .feature-description .feature-name, html .main-content .phone-feature-list .phone-feature-item .feature-description .feature-name {
+            font-size: 18px;
+            line-height: 24px; }
+          body .main-content .phone-feature-list .phone-feature-item .feature-description .feature-desc, html .main-content .phone-feature-list .phone-feature-item .feature-description .feature-desc {
+            opacity: 0.7;
+            font-size: 10.5px; } }
+    @media only screen and (max-width: 768px) {
+      body .main-content .phone-feature-list, html .main-content .phone-feature-list {
+        margin-top: 36px; }
+        body .main-content .phone-feature-list .phone-feature-item, html .main-content .phone-feature-list .phone-feature-item {
+          margin-bottom: 36px; }
+          body .main-content .phone-feature-list .phone-feature-item .feature-icon, html .main-content .phone-feature-list .phone-feature-item .feature-icon {
+            width: 45px;
+            margin-right: 15px; }
+          body .main-content .phone-feature-list .phone-feature-item .feature-description .feature-name, html .main-content .phone-feature-list .phone-feature-item .feature-description .feature-name {
+            font-size: 22px;
+            line-height: 28px; }
+          body .main-content .phone-feature-list .phone-feature-item .feature-description .feature-desc, html .main-content .phone-feature-list .phone-feature-item .feature-description .feature-desc {
+            font-size: 15px; } }
+    @media only screen and (max-width: 480px) {
+      body .main-content .phone-feature-list, html .main-content .phone-feature-list {
+        margin-top: 20px; }
+        body .main-content .phone-feature-list .phone-feature-item, html .main-content .phone-feature-list .phone-feature-item {
+          margin-bottom: 20px; }
+          body .main-content .phone-feature-list .phone-feature-item .feature-icon, html .main-content .phone-feature-list .phone-feature-item .feature-icon {
+            width: 35px;
+            margin-right: 10px; }
+          body .main-content .phone-feature-list .phone-feature-item .feature-description .feature-name, html .main-content .phone-feature-list .phone-feature-item .feature-description .feature-name {
+            font-size: 18px;
+            line-height: 24px; }
+          body .main-content .phone-feature-list .phone-feature-item .feature-description .feature-desc, html .main-content .phone-feature-list .phone-feature-item .feature-description .feature-desc {
+            font-size: 12px; } }
+    @media only screen and (max-width: 376px) {
+      body .main-content .phone-feature-list, html .main-content .phone-feature-list {
+        margin-top: 18px; }
+        body .main-content .phone-feature-list .phone-feature-item, html .main-content .phone-feature-list .phone-feature-item {
+          margin-bottom: 18px; }
+          body .main-content .phone-feature-list .phone-feature-item .feature-icon, html .main-content .phone-feature-list .phone-feature-item .feature-icon {
+            width: 32px;
+            margin-right: 10px; }
+          body .main-content .phone-feature-list .phone-feature-item .feature-description .feature-name, html .main-content .phone-feature-list .phone-feature-item .feature-description .feature-name {
+            font-size: 15px;
+            line-height: 20px; }
+          body .main-content .phone-feature-list .phone-feature-item .feature-description .feature-desc, html .main-content .phone-feature-list .phone-feature-item .feature-description .feature-desc {
+            font-size: 12px; } }
+
+/* ======================
+* Margin And Padding Generator 
+====================== */
+.mt-5 {
+  margin-top: 5px !important; }
+
+.pt-5 {
+  padding-top: 5px !important; }
+
+.mb-5 {
+  margin-bottom: 5px !important; }
+
+.pb-5 {
+  padding-bottom: 5px !important; }
+
+.ml-5 {
+  margin-left: 5px !important; }
+
+.pl-5 {
+  padding-left: 5px !important; }
+
+.mr-5 {
+  margin-right: 5px !important; }
+
+.pr-5 {
+  padding-right: 5px !important; }
+
+.mt-10 {
+  margin-top: 10px !important; }
+
+.pt-10 {
+  padding-top: 10px !important; }
+
+.mb-10 {
+  margin-bottom: 10px !important; }
+
+.pb-10 {
+  padding-bottom: 10px !important; }
+
+.ml-10 {
+  margin-left: 10px !important; }
+
+.pl-10 {
+  padding-left: 10px !important; }
+
+.mr-10 {
+  margin-right: 10px !important; }
+
+.pr-10 {
+  padding-right: 10px !important; }
+
+.mt-15 {
+  margin-top: 15px !important; }
+
+.pt-15 {
+  padding-top: 15px !important; }
+
+.mb-15 {
+  margin-bottom: 15px !important; }
+
+.pb-15 {
+  padding-bottom: 15px !important; }
+
+.ml-15 {
+  margin-left: 15px !important; }
+
+.pl-15 {
+  padding-left: 15px !important; }
+
+.mr-15 {
+  margin-right: 15px !important; }
+
+.pr-15 {
+  padding-right: 15px !important; }
+
+.mt-20 {
+  margin-top: 20px !important; }
+
+.pt-20 {
+  padding-top: 20px !important; }
+
+.mb-20 {
+  margin-bottom: 20px !important; }
+
+.pb-20 {
+  padding-bottom: 20px !important; }
+
+.ml-20 {
+  margin-left: 20px !important; }
+
+.pl-20 {
+  padding-left: 20px !important; }
+
+.mr-20 {
+  margin-right: 20px !important; }
+
+.pr-20 {
+  padding-right: 20px !important; }
+
+.mt-25 {
+  margin-top: 25px !important; }
+
+.pt-25 {
+  padding-top: 25px !important; }
+
+.mb-25 {
+  margin-bottom: 25px !important; }
+
+.pb-25 {
+  padding-bottom: 25px !important; }
+
+.ml-25 {
+  margin-left: 25px !important; }
+
+.pl-25 {
+  padding-left: 25px !important; }
+
+.mr-25 {
+  margin-right: 25px !important; }
+
+.pr-25 {
+  padding-right: 25px !important; }
+
+.mt-30 {
+  margin-top: 30px !important; }
+
+.pt-30 {
+  padding-top: 30px !important; }
+
+.mb-30 {
+  margin-bottom: 30px !important; }
+
+.pb-30 {
+  padding-bottom: 30px !important; }
+
+.ml-30 {
+  margin-left: 30px !important; }
+
+.pl-30 {
+  padding-left: 30px !important; }
+
+.mr-30 {
+  margin-right: 30px !important; }
+
+.pr-30 {
+  padding-right: 30px !important; }
+
+.mt-35 {
+  margin-top: 35px !important; }
+
+.pt-35 {
+  padding-top: 35px !important; }
+
+.mb-35 {
+  margin-bottom: 35px !important; }
+
+.pb-35 {
+  padding-bottom: 35px !important; }
+
+.ml-35 {
+  margin-left: 35px !important; }
+
+.pl-35 {
+  padding-left: 35px !important; }
+
+.mr-35 {
+  margin-right: 35px !important; }
+
+.pr-35 {
+  padding-right: 35px !important; }
+
+.mt-40 {
+  margin-top: 40px !important; }
+
+.pt-40 {
+  padding-top: 40px !important; }
+
+.mb-40 {
+  margin-bottom: 40px !important; }
+
+.pb-40 {
+  padding-bottom: 40px !important; }
+
+.ml-40 {
+  margin-left: 40px !important; }
+
+.pl-40 {
+  padding-left: 40px !important; }
+
+.mr-40 {
+  margin-right: 40px !important; }
+
+.pr-40 {
+  padding-right: 40px !important; }
+
+.mt-45 {
+  margin-top: 45px !important; }
+
+.pt-45 {
+  padding-top: 45px !important; }
+
+.mb-45 {
+  margin-bottom: 45px !important; }
+
+.pb-45 {
+  padding-bottom: 45px !important; }
+
+.ml-45 {
+  margin-left: 45px !important; }
+
+.pl-45 {
+  padding-left: 45px !important; }
+
+.mr-45 {
+  margin-right: 45px !important; }
+
+.pr-45 {
+  padding-right: 45px !important; }
+
+.mt-50 {
+  margin-top: 50px !important; }
+
+.pt-50 {
+  padding-top: 50px !important; }
+
+.mb-50 {
+  margin-bottom: 50px !important; }
+
+.pb-50 {
+  padding-bottom: 50px !important; }
+
+.ml-50 {
+  margin-left: 50px !important; }
+
+.pl-50 {
+  padding-left: 50px !important; }
+
+.mr-50 {
+  margin-right: 50px !important; }
+
+.pr-50 {
+  padding-right: 50px !important; }
+
+.mt-55 {
+  margin-top: 55px !important; }
+
+.pt-55 {
+  padding-top: 55px !important; }
+
+.mb-55 {
+  margin-bottom: 55px !important; }
+
+.pb-55 {
+  padding-bottom: 55px !important; }
+
+.ml-55 {
+  margin-left: 55px !important; }
+
+.pl-55 {
+  padding-left: 55px !important; }
+
+.mr-55 {
+  margin-right: 55px !important; }
+
+.pr-55 {
+  padding-right: 55px !important; }
+
+.mt-60 {
+  margin-top: 60px !important; }
+
+.pt-60 {
+  padding-top: 60px !important; }
+
+.mb-60 {
+  margin-bottom: 60px !important; }
+
+.pb-60 {
+  padding-bottom: 60px !important; }
+
+.ml-60 {
+  margin-left: 60px !important; }
+
+.pl-60 {
+  padding-left: 60px !important; }
+
+.mr-60 {
+  margin-right: 60px !important; }
+
+.pr-60 {
+  padding-right: 60px !important; }
+
+.mt-65 {
+  margin-top: 65px !important; }
+
+.pt-65 {
+  padding-top: 65px !important; }
+
+.mb-65 {
+  margin-bottom: 65px !important; }
+
+.pb-65 {
+  padding-bottom: 65px !important; }
+
+.ml-65 {
+  margin-left: 65px !important; }
+
+.pl-65 {
+  padding-left: 65px !important; }
+
+.mr-65 {
+  margin-right: 65px !important; }
+
+.pr-65 {
+  padding-right: 65px !important; }
+
+.mt-70 {
+  margin-top: 70px !important; }
+
+.pt-70 {
+  padding-top: 70px !important; }
+
+.mb-70 {
+  margin-bottom: 70px !important; }
+
+.pb-70 {
+  padding-bottom: 70px !important; }
+
+.ml-70 {
+  margin-left: 70px !important; }
+
+.pl-70 {
+  padding-left: 70px !important; }
+
+.mr-70 {
+  margin-right: 70px !important; }
+
+.pr-70 {
+  padding-right: 70px !important; }
+
+.mt-75 {
+  margin-top: 75px !important; }
+
+.pt-75 {
+  padding-top: 75px !important; }
+
+.mb-75 {
+  margin-bottom: 75px !important; }
+
+.pb-75 {
+  padding-bottom: 75px !important; }
+
+.ml-75 {
+  margin-left: 75px !important; }
+
+.pl-75 {
+  padding-left: 75px !important; }
+
+.mr-75 {
+  margin-right: 75px !important; }
+
+.pr-75 {
+  padding-right: 75px !important; }
+
+.mt-80 {
+  margin-top: 80px !important; }
+
+.pt-80 {
+  padding-top: 80px !important; }
+
+.mb-80 {
+  margin-bottom: 80px !important; }
+
+.pb-80 {
+  padding-bottom: 80px !important; }
+
+.ml-80 {
+  margin-left: 80px !important; }
+
+.pl-80 {
+  padding-left: 80px !important; }
+
+.mr-80 {
+  margin-right: 80px !important; }
+
+.pr-80 {
+  padding-right: 80px !important; }
+
+.mt-85 {
+  margin-top: 85px !important; }
+
+.pt-85 {
+  padding-top: 85px !important; }
+
+.mb-85 {
+  margin-bottom: 85px !important; }
+
+.pb-85 {
+  padding-bottom: 85px !important; }
+
+.ml-85 {
+  margin-left: 85px !important; }
+
+.pl-85 {
+  padding-left: 85px !important; }
+
+.mr-85 {
+  margin-right: 85px !important; }
+
+.pr-85 {
+  padding-right: 85px !important; }
+
+.mt-90 {
+  margin-top: 90px !important; }
+
+.pt-90 {
+  padding-top: 90px !important; }
+
+.mb-90 {
+  margin-bottom: 90px !important; }
+
+.pb-90 {
+  padding-bottom: 90px !important; }
+
+.ml-90 {
+  margin-left: 90px !important; }
+
+.pl-90 {
+  padding-left: 90px !important; }
+
+.mr-90 {
+  margin-right: 90px !important; }
+
+.pr-90 {
+  padding-right: 90px !important; }
+
+.mt-100 {
+  margin-top: 100px !important; }
+
+.pt-100 {
+  padding-top: 100px !important; }
+
+.mb-100 {
+  margin-bottom: 100px !important; }
+
+.pb-100 {
+  padding-bottom: 100px !important; }
+
+.ml-100 {
+  margin-left: 100px !important; }
+
+.pl-100 {
+  padding-left: 100px !important; }
+
+.mr-100 {
+  margin-right: 100px !important; }
+
+.pr-100 {
+  padding-right: 100px !important; }
+
+.mt-105 {
+  margin-top: 105px !important; }
+
+.pt-105 {
+  padding-top: 105px !important; }
+
+.mb-105 {
+  margin-bottom: 105px !important; }
+
+.pb-105 {
+  padding-bottom: 105px !important; }
+
+.ml-105 {
+  margin-left: 105px !important; }
+
+.pl-105 {
+  padding-left: 105px !important; }
+
+.mr-105 {
+  margin-right: 105px !important; }
+
+.pr-105 {
+  padding-right: 105px !important; }
+
+.mt-110 {
+  margin-top: 110px !important; }
+
+.pt-110 {
+  padding-top: 110px !important; }
+
+.mb-110 {
+  margin-bottom: 110px !important; }
+
+.pb-110 {
+  padding-bottom: 110px !important; }
+
+.ml-110 {
+  margin-left: 110px !important; }
+
+.pl-110 {
+  padding-left: 110px !important; }
+
+.mr-110 {
+  margin-right: 110px !important; }
+
+.pr-110 {
+  padding-right: 110px !important; }
+
+.mt-115 {
+  margin-top: 115px !important; }
+
+.pt-115 {
+  padding-top: 115px !important; }
+
+.mb-115 {
+  margin-bottom: 115px !important; }
+
+.pb-115 {
+  padding-bottom: 115px !important; }
+
+.ml-115 {
+  margin-left: 115px !important; }
+
+.pl-115 {
+  padding-left: 115px !important; }
+
+.mr-115 {
+  margin-right: 115px !important; }
+
+.pr-115 {
+  padding-right: 115px !important; }
+
+.mt-120 {
+  margin-top: 120px !important; }
+
+.pt-120 {
+  padding-top: 120px !important; }
+
+.mb-120 {
+  margin-bottom: 120px !important; }
+
+.pb-120 {
+  padding-bottom: 120px !important; }
+
+.ml-120 {
+  margin-left: 120px !important; }
+
+.pl-120 {
+  padding-left: 120px !important; }
+
+.mr-120 {
+  margin-right: 120px !important; }
+
+.pr-120 {
+  padding-right: 120px !important; }
+
+.mt-125 {
+  margin-top: 125px !important; }
+
+.pt-125 {
+  padding-top: 125px !important; }
+
+.mb-125 {
+  margin-bottom: 125px !important; }
+
+.pb-125 {
+  padding-bottom: 125px !important; }
+
+.ml-125 {
+  margin-left: 125px !important; }
+
+.pl-125 {
+  padding-left: 125px !important; }
+
+.mr-125 {
+  margin-right: 125px !important; }
+
+.pr-125 {
+  padding-right: 125px !important; }
+
+.mt-130 {
+  margin-top: 130px !important; }
+
+.pt-130 {
+  padding-top: 130px !important; }
+
+.mb-130 {
+  margin-bottom: 130px !important; }
+
+.pb-130 {
+  padding-bottom: 130px !important; }
+
+.ml-130 {
+  margin-left: 130px !important; }
+
+.pl-130 {
+  padding-left: 130px !important; }
+
+.mr-130 {
+  margin-right: 130px !important; }
+
+.pr-130 {
+  padding-right: 130px !important; }
+
+.mt-135 {
+  margin-top: 135px !important; }
+
+.pt-135 {
+  padding-top: 135px !important; }
+
+.mb-135 {
+  margin-bottom: 135px !important; }
+
+.pb-135 {
+  padding-bottom: 135px !important; }
+
+.ml-135 {
+  margin-left: 135px !important; }
+
+.pl-135 {
+  padding-left: 135px !important; }
+
+.mr-135 {
+  margin-right: 135px !important; }
+
+.pr-135 {
+  padding-right: 135px !important; }
+
+.mt-140 {
+  margin-top: 140px !important; }
+
+.pt-140 {
+  padding-top: 140px !important; }
+
+.mb-140 {
+  margin-bottom: 140px !important; }
+
+.pb-140 {
+  padding-bottom: 140px !important; }
+
+.ml-140 {
+  margin-left: 140px !important; }
+
+.pl-140 {
+  padding-left: 140px !important; }
+
+.mr-140 {
+  margin-right: 140px !important; }
+
+.pr-140 {
+  padding-right: 140px !important; }
+
+.mt-145 {
+  margin-top: 145px !important; }
+
+.pt-145 {
+  padding-top: 145px !important; }
+
+.mb-145 {
+  margin-bottom: 145px !important; }
+
+.pb-145 {
+  padding-bottom: 145px !important; }
+
+.ml-145 {
+  margin-left: 145px !important; }
+
+.pl-145 {
+  padding-left: 145px !important; }
+
+.mr-145 {
+  margin-right: 145px !important; }
+
+.pr-145 {
+  padding-right: 145px !important; }
+
+.mt-150 {
+  margin-top: 150px !important; }
+
+.pt-150 {
+  padding-top: 150px !important; }
+
+.mb-150 {
+  margin-bottom: 150px !important; }
+
+.pb-150 {
+  padding-bottom: 150px !important; }
+
+.ml-150 {
+  margin-left: 150px !important; }
+
+.pl-150 {
+  padding-left: 150px !important; }
+
+.mr-150 {
+  margin-right: 150px !important; }
+
+.pr-150 {
+  padding-right: 150px !important; }
+
+.mt-180 {
+  margin-top: 180px !important; }
+
+.pt-180 {
+  padding-top: 180px !important; }
+
+.mb-180 {
+  margin-bottom: 180px !important; }
+
+.pb-180 {
+  padding-bottom: 180px !important; }
+
+.ml-180 {
+  margin-left: 180px !important; }
+
+.pl-180 {
+  padding-left: 180px !important; }
+
+.mr-180 {
+  margin-right: 180px !important; }
+
+.pr-180 {
+  padding-right: 180px !important; }
+
+.mt-200 {
+  margin-top: 200px !important; }
+
+.pt-200 {
+  padding-top: 200px !important; }
+
+.mb-200 {
+  margin-bottom: 200px !important; }
+
+.pb-200 {
+  padding-bottom: 200px !important; }
+
+.ml-200 {
+  margin-left: 200px !important; }
+
+.pl-200 {
+  padding-left: 200px !important; }
+
+.mr-200 {
+  margin-right: 200px !important; }
+
+.pr-200 {
+  padding-right: 200px !important; }
+
+/* ============================
+ * Mixin helper
+ * ============================ */
+/* ============================
+ * Color Helper
+ * ============================ */
+/* ============================
+ * Responsive Supports
+ * ============================ */
+@media only screen and (max-width: 768px) {
+  .mb-hide {
+    display: none !important; } }
+
+.mb-show {
+  display: none !important; }
+  @media only screen and (max-width: 768px) {
+    .mb-show {
+      display: block !important; }
+      .mb-show.il-block {
+        display: inline-block !important; } }
+
+/* === TYPOGRAPHY === */
+h1, h2, h3, h4 {
+  margin: 0; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+  a:hover {
+    color: inherit;
+    text-decoration: none; }
+
+p {
+  margin: 0; }
+
+.white-txt {
+  color: #FFF !important; }
+  .white-txt * {
+    color: #FFF !important; }
+
+.main-title {
+  font-size: 50px;
+  line-height: 66px;
+  margin: 0;
+  font-weight: 600;
+  /* === RESPONSIVE === */ }
+  @media only screen and (max-width: 1680px) {
+    .main-title {
+      font-size: 38px;
+      line-height: 50px; } }
+  @media only screen and (max-width: 768px) {
+    .main-title {
+      font-size: 30px;
+      line-height: 42px; } }
+  @media only screen and (max-width: 480px) {
+    .main-title {
+      font-size: 20px;
+      line-height: 30px; } }
+
+.sub-title {
+  font-size: 36px;
+  line-height: 50px;
+  margin: 0;
+  font-weight: 600;
+  /* === RESPONSIVE === */ }
+  @media only screen and (max-width: 1680px) {
+    .sub-title {
+      font-size: 27px;
+      line-height: 38px; } }
+  @media only screen and (max-width: 768px) {
+    .sub-title {
+      font-size: 23px;
+      line-height: 32px; } }
+  @media only screen and (max-width: 480px) {
+    .sub-title {
+      font-size: 17px;
+      line-height: 25px; } }
+
+.desc {
+  font-size: 20px;
+  line-height: 36px;
+  color: #000;
+  opacity: 0.7;
+  margin-top: 30px;
+  /* === RESPONSIVE === */ }
+  .desc.mt-0 {
+    margin-top: 0; }
+  @media only screen and (max-width: 1680px) {
+    .desc {
+      font-size: 15px;
+      line-height: 27px;
+      margin-top: 22.5px; } }
+  @media only screen and (max-width: 768px) {
+    .desc {
+      font-size: 14px;
+      line-height: 25px;
+      margin-top: 18px; } }
+  @media only screen and (max-width: 480px) {
+    .desc {
+      font-size: 12px;
+      line-height: 18px;
+      margin-top: 13px; } }
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: auto;
+  padding: 0 15px; }
+
+/* This file Will Import All UI Element */
+#page-footer {
+  font-size: 13px;
+  color: #757575;
+  padding-top: 60px;
+  border-top: 2px solid #dadada;
+  /* === RESPONSIVE === */ }
+  #page-footer a {
+    color: #757575; }
+  #page-footer .footer__col {
+    width: 20%;
+    float: left; }
+    #page-footer .footer__col h3 {
+      font-size: 16px;
+      margin-bottom: 42px; }
+    #page-footer .footer__col ul li {
+      margin-bottom: 16px; }
+    #page-footer .footer__col.footer__col--last {
+      text-align: center; }
+      #page-footer .footer__col.footer__col--last > a {
+        display: inline-flex;
+        padding: 11px 25px;
+        border: 1px solid;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        white-space: nowrap; }
+        #page-footer .footer__col.footer__col--last > a i {
+          font-size: 30px;
+          margin-right: 20px;
+          color: #2f2f2f; }
+      #page-footer .footer__col.footer__col--last p {
+        margin-bottom: 40px; }
+      #page-footer .footer__col.footer__col--last .footer__social {
+        margin-bottom: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        #page-footer .footer__col.footer__col--last .footer__social a {
+          margin: 0 20px; }
+    #page-footer .footer__col .footer__popup {
+      margin-bottom: 20px; }
+  #page-footer .copyright {
+    border-top: 2px solid #cfcfcf;
+    padding: 15px 0;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    @media only screen and (max-width: 768px) {
+      #page-footer .copyright {
+        flex-direction: column;
+        padding-bottom: 20px; } }
+    @media only screen and (max-width: 768px) {
+      #page-footer .copyright .copyright-left {
+        order: 2; } }
+    @media only screen and (max-width: 768px) {
+      #page-footer .copyright .copyright-right {
+        order: 1;
+        margin-bottom: 15px; } }
+    #page-footer .copyright .copyright-right li {
+      display: inline-block;
+      padding: 10px 20px; }
+      @media only screen and (max-width: 768px) {
+        #page-footer .copyright .copyright-right li {
+          padding: 5px 15px; } }
+      #page-footer .copyright .copyright-right li:first-child {
+        border-right: solid 1px rgba(194, 199, 202, 0.5); }
+  @media only screen and (max-width: 768px) {
+    #page-footer {
+      padding-top: 0; }
+      #page-footer .footer__col {
+        float: none;
+        width: 100%;
+        padding: 0 30px; }
+        #page-footer .footer__col:nth-last-child(2) h3 {
+          border-bottom: none; }
+        #page-footer .footer__col h3 {
+          position: relative;
+          padding: 17px 0;
+          margin-bottom: 0;
+          border-bottom: 1px solid #e6e6e6; }
+          #page-footer .footer__col h3:after {
+            content: "\f067";
+            position: absolute;
+            right: 0;
+            font: normal normal normal 14px/1 FontAwesome;
+            margin-top: 3px; }
+          #page-footer .footer__col h3.footer__col__ul--active:after {
+            content: "\f068"; }
+        #page-footer .footer__col ul {
+          display: none;
+          margin-top: 18px; }
+          #page-footer .footer__col ul li:last-child {
+            margin-bottom: 5px; }
+        #page-footer .footer__col.footer__col--last {
+          padding: 0; }
+          #page-footer .footer__col.footer__col--last > a {
+            max-width: 250px;
+            margin: 0 auto 10px;
+            padding: 9px 25px; }
+          #page-footer .footer__col.footer__col--last p {
+            margin-bottom: 20px; }
+          #page-footer .footer__col.footer__col--last .footer__social {
+            margin-bottom: 25px; }
+        #page-footer .footer__col .footer__popup {
+          padding: 17px 30px;
+          margin-bottom: 25px;
+          border-top: 1px solid #e6e6e6;
+          border-bottom: 1px solid #e6e6e6;
+          text-align: left; }
+      #page-footer .copyright {
+        flex-direction: column;
+        padding-bottom: 20px; }
+        #page-footer .copyright .copyright-left {
+          order: 2; }
+        #page-footer .copyright .copyright-right {
+          order: 1;
+          margin-bottom: 15px; }
+          #page-footer .copyright .copyright-right li {
+            padding: 5px 15px; } }
+
+body.stop-scroll {
+  overflow: hidden; }
+
+body {
+  padding-top: 60px;
+  transition: all ease-out 300ms; }
+  body.is-loading {
+    opacity: 0; }
+
+#page-header {
+  font-size: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 8;
+  color: #000;
+  border-bottom: 1px solid #fff;
+  background-color: white;
+  transition: background-color ease-out .3s;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.16);
+  -khtml-box-shadow: 0 0 15px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.16);
+  -ms-box-shadow: 0 0 15px rgba(0, 0, 0, 0.16);
+  -o-box-shadow: 0 0 15px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.16);
+  /* === RESPONSIVE === */ }
+  #page-header.product-active {
+    background-color: #fff; }
+    #page-header.product-active .header__list > li > a {
+      color: #000; }
+    #page-header.product-active form input[type="text"] {
+      border-color: #000;
+      background-image: url("../img/icon-search-black.png"); }
+    #page-header.product-active .nav-product {
+      height: 230px;
+      border-top: 1px solid #a6a6a6; }
+  #page-header.menu-active {
+    background-color: #fff;
+    border-bottom: 1px solid; }
+    #page-header.menu-active form input[type="text"] {
+      border-color: #000;
+      background-image: url("../img/icon-search-sp-black.png"); }
+  #page-header.menu-scroll {
+    background-color: #fff; }
+    #page-header.menu-scroll > .container {
+      height: 0;
+      overflow: hidden; }
+    #page-header.menu-scroll .header__list > li > a {
+      color: #000; }
+    #page-header.menu-scroll form input[type="text"] {
+      border-color: #000;
+      background-image: url("../img/icon-search-black.png"); }
+      @media only screen and (max-width: 480px) {
+        #page-header.menu-scroll form input[type="text"] {
+          background-image: url("../img/icon-search-sp-black.png"); } }
+    #page-header.menu-scroll #nav-icon4 span {
+      background-color: #000; }
+  #page-header.header--white {
+    background-color: #fff; }
+    #page-header.header--white .header__list > li > a {
+      color: #000; }
+    #page-header.header--white form input[type="text"] {
+      border-color: #000;
+      background-image: url("../img/icon-search-black.png"); }
+      @media only screen and (max-width: 480px) {
+        #page-header.header--white form input[type="text"] {
+          background-image: url("../img/icon-search-sp-black.png"); } }
+    #page-header.header--white #nav-icon4 span {
+      background-color: #000; }
+  #page-header > .container {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    height: 90px;
+    transition: background-color ease-out .3s, height ease-out 0.3s; }
+    @media (max-width: 1200px) {
+      #page-header > .container {
+        height: 70px; } }
+    @media (max-width: 990px) {
+      #page-header > .container {
+        height: 60px; } }
+  #page-header .header__logo {
+    margin-right: auto;
+    align-self: flex-start; }
+  #page-header .header__list, #page-header .header__list > li, #page-header .header__list > li > a {
+    height: 100%; }
+  #page-header .header__list {
+    list-style: none;
+    padding: 0;
+    margin-right: 40px; }
+    @media (max-width: 990px) {
+      #page-header .header__list {
+        margin-right: 10px; } }
+    #page-header .header__list > li {
+      display: inline-block;
+      margin-left: 40px; }
+      @media (max-width: 990px) {
+        #page-header .header__list > li {
+          margin-left: 10px; } }
+      #page-header .header__list > li.active > a {
+        color: #ffca12; }
+      #page-header .header__list > li.header__list__product i {
+        display: none; }
+      #page-header .header__list > li > a {
+        padding: 0 10px;
+        display: block;
+        color: #333;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        white-space: nowrap; }
+        @media (max-width: 990px) {
+          #page-header .header__list > li > a {
+            padding: 25px 5px; } }
+        #page-header .header__list > li > a:hover {
+          color: #ffca12; }
+  #page-header form {
+    position: relative; }
+    #page-header form input[type="submit"] {
+      display: none; }
+    #page-header form input[type="text"] {
+      background: transparent url("../img/icon-search.png") left 10px center no-repeat;
+      padding-left: 35px;
+      border: 1px solid #fff;
+      height: 30px;
+      border-radius: 15px;
+      width: count-vw(320); }
+      @media (max-width: 1200px) {
+        #page-header form input[type="text"] {
+          width: 200px; } }
+      @media (max-width: 990px) {
+        #page-header form input[type="text"] {
+          width: 150px; } }
+  #page-header .header__hamburger {
+    display: none; }
+  #page-header .nav-product {
+    background-color: #fff;
+    position: absolute;
+    z-index: 2;
+    overflow: hidden;
+    width: 100vw;
+    margin-left: -50vw;
+    left: 50%;
+    top: 100%;
+    text-align: center;
+    height: 0;
+    -webkit-transition: height ease-out 0.3s;
+    -khtml-transition: height ease-out 0.3s;
+    -moz-transition: height ease-out 0.3s;
+    -ms-transition: height ease-out 0.3s;
+    -o-transition: height ease-out 0.3s;
+    transition: height ease-out 0.3s;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.16);
+    -khtml-box-shadow: 0 0 5px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.16);
+    -ms-box-shadow: 0 0 5px rgba(0, 0, 0, 0.16);
+    -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.16); }
+    #page-header .nav-product .container {
+      padding: 34px 50px 0; }
+    #page-header .nav-product .nav-product__list {
+      position: relative; }
+      #page-header .nav-product .nav-product__list a {
+        display: inline-block;
+        padding: 15px;
+        position: relative; }
+        #page-header .nav-product .nav-product__list a img {
+          height: 105px; }
+      #page-header .nav-product .nav-product__list .nav-product__new {
+        margin: 0;
+        position: absolute;
+        left: -19px;
+        top: 2px; }
+      #page-header .nav-product .nav-product__list img {
+        margin: 0 auto 20px; }
+      #page-header .nav-product .nav-product__list .slick-arrow {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -khtml-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        background-image: url("../img/icon-next.svg");
+        border: none;
+        background-color: transparent;
+        color: transparent;
+        background-size: cover;
+        outline: none;
+        cursor: pointer; }
+        #page-header .nav-product .nav-product__list .slick-arrow.slick-prev {
+          left: -25px;
+          -webkit-transform: translateY(-50%) rotate(180deg);
+          -khtml-transform: translateY(-50%) rotate(180deg);
+          -moz-transform: translateY(-50%) rotate(180deg);
+          -ms-transform: translateY(-50%) rotate(180deg);
+          -o-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg); }
+        #page-header .nav-product .nav-product__list .slick-arrow.slick-next {
+          right: -25px; }
+    #page-header .nav-product img {
+      display: block; }
+  @media only screen and (max-width: 1024px) {
+    #page-header > .container {
+      height: 60px; }
+    #page-header .header__list {
+      margin-right: 10px; }
+    #page-header form input[type="text"] {
+      width: 150px; } }
+  @media only screen and (max-width: 768px) {
+    #page-header {
+      background-color: rgba(0, 0, 0, 0.2);
+      padding: 0 10px; }
+      #page-header .header__logo {
+        align-self: center; }
+        #page-header .header__logo img {
+          width: 90px; }
+      #page-header .header__list, #page-header .header__list > li, #page-header .header__list > li > a {
+        height: auto; }
+      #page-header .header__list {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin: 0;
+        height: calc(100vh - 60px);
+        overflow: auto; }
+        #page-header .header__list > li {
+          display: block;
+          margin-left: 0;
+          padding: 0 20px; }
+          #page-header .header__list > li.active > a {
+            color: #ffca12; }
+          #page-header .header__list > li.header__list__product a {
+            position: relative; }
+          #page-header .header__list > li.header__list__product i {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -khtml-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            font-size: 30px; }
+          #page-header .header__list > li > a {
+            padding: 20px 0;
+            border-bottom: solid 1px rgba(51, 51, 51, 0.1);
+            color: #000; }
+      #page-header form {
+        border-right: 1px solid #fff;
+        padding: 3px 8px; }
+        #page-header form input[type="text"] {
+          height: 20px;
+          background-image: url("../img/icon-search-sp.png");
+          background-position: right 5px center;
+          background-size: auto 80%;
+          padding-left: 10px;
+          padding-right: 25px;
+          width: 100%; }
+      #page-header .header__hamburger {
+        display: block; }
+      #page-header .nav-product {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        position: static;
+        display: none; }
+        #page-header .nav-product .container {
+          padding: 0; }
+        #page-header .nav-product .nav-product__list {
+          text-align: left; }
+          #page-header .nav-product .nav-product__list li {
+            padding-left: 20px;
+            padding-right: 20px; }
+          #page-header .nav-product .nav-product__list a {
+            padding: 15px 7px;
+            border-bottom: solid 1px rgba(51, 51, 51, 0.1);
+            display: block; }
+          #page-header .nav-product .nav-product__list .nav-product__new {
+            height: 45px; }
+          #page-header .nav-product .nav-product__list img {
+            display: inline-block;
+            margin-bottom: 0;
+            height: 70px;
+            margin-right: 10px; } }
+  @media only screen and (max-width: 480px) {
+    #page-header.menu-scroll form input[type="text"] {
+      background-image: url("../img/icon-search-sp-black.png"); }
+    #page-header.header--white form input[type="text"] {
+      background-image: url("../img/icon-search-sp-black.png"); } }
+
+#nav-icon4 {
+  width: 22px;
+  min-width: 22px;
+  height: 15px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  margin-left: 10px;
+  display: none; }
+  @media only screen and (max-width: 768px) {
+    #nav-icon4 {
+      display: block; } }
+  #nav-icon4 span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #fff;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out; }
+
+/* Icon 4 */
+#nav-icon4 span:nth-child(1) {
+  top: 0;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center; }
+
+#nav-icon4 span:nth-child(2) {
+  top: 6px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center; }
+
+#nav-icon4 span:nth-child(3) {
+  bottom: 0;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center; }
+
+#nav-icon4.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -2px;
+  left: 0; }
+
+#nav-icon4.open span {
+  background-color: #000; }
+
+#nav-icon4.open span:nth-child(2) {
+  width: 0;
+  opacity: 0; }
+
+#nav-icon4.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 14px;
+  left: 0; }
+
+/* === Update New Logo Styling ===*/
+#page-header.menu-scroll > .container {
+  height: 46px; }
+
+#page-header.none-fixed.menu-scroll > .container {
+  height: 0; }
+
+@media (max-width: 768px) {
+  #page-header .header__logo, #page-header #page-header .header__logo img {
+    height: 36px;
+    width: auto; }
+  #page-header.menu-scroll > .container {
+    height: 61px; }
+  #page-header.none-fixed.menu-scroll > .container {
+    height: 0; } }
+
+.modal-preorder {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden; }
+  .modal-preorder .modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+    opacity: 0;
+    transition: all ease-in 300ms 180ms; }
+  .modal-preorder .modal-content {
+    width: 1200px;
+    max-width: 100%;
+    background-color: #191919;
+    color: #FFF;
+    position: relative;
+    padding: 20px 20px 15px;
+    box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.4);
+    transition: all ease-in 300ms 20ms;
+    opacity: 0;
+    transform: translateY(30px); }
+    .modal-preorder .modal-content .title {
+      font-size: 28px;
+      font-weight: 300;
+      margin-bottom: 10px; }
+    .modal-preorder .modal-content .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      font-size: 26px;
+      color: #ffca12;
+      cursor: pointer; }
+    .modal-preorder .modal-content .title {
+      text-align: center; }
+    .modal-preorder .modal-content .shop-list {
+      display: flex;
+      list-style: none;
+      padding: 15px 30px;
+      margin: 0;
+      justify-content: center;
+      flex-wrap: wrap; }
+      .modal-preorder .modal-content .shop-list .shop-item {
+        width: 19%;
+        flex-basis: 19%;
+        margin: 0 0.5% 5px;
+        flex-shrink: 0;
+        text-align: center;
+        border: 1px solid #999;
+        padding: 0 10px 12px;
+        display: flex;
+        flex-direction: column; }
+        .modal-preorder .modal-content .shop-list .shop-item .shop-logo {
+          height: 110px;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          margin: 10px 0 20px; }
+          .modal-preorder .modal-content .shop-list .shop-item .shop-logo img {
+            max-height: 38px;
+            max-width: 80%; }
+        .modal-preorder .modal-content .shop-list .shop-item .cta {
+          display: block;
+          font-weight: 600;
+          line-height: 36px;
+          font-size: 16px;
+          color: #434343;
+          background-color: #ffca12;
+          border-radius: 3px; }
+      .modal-preorder .modal-content .shop-list.compressed .shop-item {
+        width: 11.5%;
+        flex-basis: 11.5%;
+        margin: 0 0.5% 5px;
+        flex-shrink: 0;
+        border: none;
+        padding: 3px 5px; }
+        .modal-preorder .modal-content .shop-list.compressed .shop-item .shop-logo {
+          height: 75px;
+          margin: 0; }
+          .modal-preorder .modal-content .shop-list.compressed .shop-item .shop-logo img {
+            max-height: 38px;
+            max-width: 90%; }
+    .modal-preorder .modal-content .search-store-btn {
+      text-align: center; }
+      .modal-preorder .modal-content .search-store-btn .cta {
+        display: inline-block;
+        font-size: 1em;
+        line-height: 2.25em;
+        padding: 0 1.5em;
+        border-radius: 3px;
+        font-weight: 600;
+        background-color: #ffca12;
+        color: #434343; }
+  .modal-preorder.active {
+    visibility: visible; }
+    .modal-preorder.active .modal-overlay {
+      transition: all ease-out 300ms 20ms;
+      opacity: 0.5; }
+    .modal-preorder.active .modal-content {
+      transition: all ease-out 300ms 180ms;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1; }
+  @media only screen and (max-width: 1368px) {
+    .modal-preorder .modal-content {
+      max-width: 100%;
+      padding: 25px 20px 15px; }
+      .modal-preorder .modal-content .title {
+        font-size: 32px;
+        margin-bottom: 13px; }
+      .modal-preorder .modal-content .close-btn {
+        top: 15px;
+        right: 30px;
+        font-size: 26px; }
+      .modal-preorder .modal-content .shop-list {
+        padding: 10px 25px; }
+        .modal-preorder .modal-content .shop-list .shop-item {
+          padding: 10px; }
+          .modal-preorder .modal-content .shop-list .shop-item .shop-logo {
+            height: 115px;
+            margin: 10px 0; }
+            .modal-preorder .modal-content .shop-list .shop-item .shop-logo img {
+              max-height: 38px;
+              max-width: 80%; }
+          .modal-preorder .modal-content .shop-list .shop-item .cta {
+            font-weight: 500;
+            line-height: 35px;
+            font-size: 16px; }
+      .modal-preorder .modal-content.compressed .shop-item {
+        margin: 0 0.5% 3px;
+        padding: 2px 4px; }
+        .modal-preorder .modal-content.compressed .shop-item .shop-logo {
+          height: 65px;
+          margin: 5px 0; }
+          .modal-preorder .modal-content.compressed .shop-item .shop-logo img {
+            max-height: 35px;
+            max-width: 90%; } }
+  @media only screen and (max-width: 1280px) {
+    .modal-preorder .modal-content {
+      padding: 22px 20px 15px; }
+      .modal-preorder .modal-content .title {
+        font-size: 30px;
+        margin-bottom: 10px; }
+      .modal-preorder .modal-content .close-btn {
+        top: 15px;
+        right: 30px;
+        font-size: 25px; }
+      .modal-preorder .modal-content .shop-list {
+        padding: 13px 22px; }
+        .modal-preorder .modal-content .shop-list .shop-item {
+          padding: 8px; }
+          .modal-preorder .modal-content .shop-list .shop-item .shop-logo {
+            height: 100px;
+            margin: 10px 0; }
+            .modal-preorder .modal-content .shop-list .shop-item .shop-logo img {
+              max-height: 32px;
+              max-width: 80%; }
+          .modal-preorder .modal-content .shop-list .shop-item .cta {
+            font-weight: 500;
+            line-height: 34px;
+            font-size: 15px; } }
+  @media only screen and (max-width: 1024px) {
+    .modal-preorder .modal-content {
+      width: 940px;
+      padding: 22px 20px 10px; }
+      .modal-preorder .modal-content .title {
+        font-size: 30px;
+        margin-bottom: 20px; }
+      .modal-preorder .modal-content .close-btn {
+        top: 15px;
+        right: 30px;
+        font-size: 25px; }
+      .modal-preorder .modal-content .shop-list {
+        padding: 13px 22px; }
+        .modal-preorder .modal-content .shop-list .shop-item {
+          padding: 10px;
+          width: 24%;
+          flex-basis: 24%; }
+          .modal-preorder .modal-content .shop-list .shop-item .shop-logo {
+            height: 135px;
+            margin: 10px 0 15px; }
+            .modal-preorder .modal-content .shop-list .shop-item .shop-logo img {
+              max-height: 35px;
+              max-width: 80%; }
+          .modal-preorder .modal-content .shop-list .shop-item .cta {
+            font-weight: 500;
+            line-height: 34px;
+            font-size: 15px; } }
+  @media only screen and (max-width: 768px) {
+    .modal-preorder .modal-content {
+      width: 720px;
+      padding: 22px 10px 15px; }
+      .modal-preorder .modal-content .title {
+        font-size: 28px;
+        margin-bottom: 18px; }
+      .modal-preorder .modal-content .close-btn {
+        top: 15px;
+        right: 26px;
+        font-size: 25px; }
+      .modal-preorder .modal-content .shop-list {
+        padding: 13px 15px; }
+        .modal-preorder .modal-content .shop-list .shop-item {
+          padding: 10px;
+          width: 24%;
+          flex-basis: 24%; }
+          .modal-preorder .modal-content .shop-list .shop-item .shop-logo {
+            height: 100px;
+            margin: 10px 0 15px; }
+            .modal-preorder .modal-content .shop-list .shop-item .shop-logo img {
+              max-height: 35px;
+              max-width: 90%; }
+          .modal-preorder .modal-content .shop-list .shop-item .cta {
+            font-weight: 500;
+            line-height: 32px;
+            font-size: 14px; } }
+  @media only screen and (max-width: 480px) {
+    .modal-preorder .modal-content {
+      width: 94%;
+      padding: 22px 8px 12px; }
+      .modal-preorder .modal-content .title {
+        font-size: 20px;
+        margin-bottom: 12px; }
+      .modal-preorder .modal-content .close-btn {
+        top: 10px;
+        right: 20px;
+        font-size: 22px; }
+      .modal-preorder .modal-content .shop-list {
+        padding: 13px 0;
+        max-height: 50vh;
+        overflow-y: auto; }
+        .modal-preorder .modal-content .shop-list .shop-item {
+          padding: 8px;
+          width: 32%;
+          flex-basis: 32%; }
+          .modal-preorder .modal-content .shop-list .shop-item .shop-logo {
+            height: 70px;
+            margin: 0; }
+            .modal-preorder .modal-content .shop-list .shop-item .shop-logo img {
+              max-height: 28px;
+              max-width: 90%; }
+          .modal-preorder .modal-content .shop-list .shop-item .cta {
+            font-weight: 500;
+            line-height: 28px;
+            font-size: 12px;
+            white-space: nowrap; }
+        .modal-preorder .modal-content .shop-list.compressed .shop-item {
+          width: 19%;
+          flex-basis: 19%;
+          margin: 0 0.5% 3px;
+          flex-shrink: 0;
+          border: none;
+          padding: 3px 3px; }
+          .modal-preorder .modal-content .shop-list.compressed .shop-item .shop-logo {
+            height: 40px;
+            margin: 5px 0; }
+            .modal-preorder .modal-content .shop-list.compressed .shop-item .shop-logo img {
+              max-height: 33px;
+              max-width: 90%; } }
+  @media only screen and (max-width: 376px) {
+    .modal-preorder .modal-content {
+      width: 95%;
+      padding: 20px 5px 10px; }
+      .modal-preorder .modal-content .title {
+        font-size: 18px;
+        margin-bottom: 8px; }
+      .modal-preorder .modal-content .close-btn {
+        top: 10px;
+        right: 20px;
+        font-size: 22px; }
+      .modal-preorder .modal-content .shop-list {
+        padding: 12px 0; }
+        .modal-preorder .modal-content .shop-list .shop-item {
+          padding: 5px;
+          width: 32%;
+          flex-basis: 32%; }
+          .modal-preorder .modal-content .shop-list .shop-item .shop-logo {
+            height: 35px;
+            margin: 0; }
+            .modal-preorder .modal-content .shop-list .shop-item .shop-logo img {
+              max-height: 24px;
+              max-width: 90%; }
+          .modal-preorder .modal-content .shop-list .shop-item .cta {
+            font-weight: 500;
+            line-height: 22px;
+            font-size: 11px;
+            white-space: nowrap; } }
+
+.video-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #555;
+  padding: 2px;
+  z-index: 16;
+  visibility: hidden;
+  opacity: 0;
+  transition: all ease-out 300ms 50ms; }
+  .video-modal.active {
+    visibility: visible;
+    opacity: 1; }
+  .video-modal .close-video-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background: #ffca12;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    display: block;
+    color: #434343;
+    text-align: center;
+    font-size: 23px;
+    border-radius: 22px;
+    cursor: pointer; }
+    .video-modal .close-video-modal .fa {
+      position: relative;
+      top: -1px; }
+  .video-modal .video-holder {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+
+.custom-header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 90px;
+  z-index: 6;
+  transition: all ease-out .3s;
+  /* === RESPONSIVE === */ }
+  .custom-header.menu-scroll {
+    transform: translateY(-90px);
+    transition: all ease-out .3s;
+    background: #FFF;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.35); }
+    .custom-header.menu-scroll .container {
+      border-bottom: none; }
+  .custom-header .custom-menu-list {
+    height: 54px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .custom-header .custom-menu-list .menu-item {
+      font-weight: 600;
+      color: #434343;
+      font-size: .9rem;
+      margin: 0 1.5rem;
+      text-align: center; }
+      .custom-header .custom-menu-list .menu-item .indicator, .custom-header .custom-menu-list .menu-item a {
+        transition: all ease-in 150ms; }
+        .custom-header .custom-menu-list .menu-item .indicator.active, .custom-header .custom-menu-list .menu-item a.active {
+          transition: all ease-out 150ms;
+          color: #ffca12; }
+        .custom-header .custom-menu-list .menu-item .indicator:hover, .custom-header .custom-menu-list .menu-item a:hover {
+          transition: all ease-out 150ms;
+          color: #ffca12; }
+      .custom-header .custom-menu-list .menu-item.menu-cta {
+        margin-right: 0; }
+        .custom-header .custom-menu-list .menu-item.menu-cta .buynow-btn {
+          padding: 0 1.25rem;
+          background-color: #ffca12;
+          line-height: 2.25;
+          display: inline-block;
+          border-radius: 3px; }
+          .custom-header .custom-menu-list .menu-item.menu-cta .buynow-btn:hover {
+            color: #434343; }
+  @media only screen and (max-width: 768px) {
+    .custom-header {
+      height: 50px;
+      background-color: #FFF;
+      top: 60px; }
+      .custom-header.menu-scroll {
+        transform: translateY(-60px); }
+      .custom-header .custom-menu-list {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: 100%;
+        display: none; }
+        .custom-header .custom-menu-list .menu-item {
+          position: relative;
+          z-index: 2;
+          height: 50px;
+          line-height: 50px;
+          text-align: left;
+          width: 100%;
+          padding: 0 15px;
+          margin: 0;
+          background-color: #FFF; }
+          .custom-header .custom-menu-list .menu-item.menu-cta {
+            display: none; }
+        .custom-header .custom-menu-list .menu-overlay {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: rgba(51, 51, 51, 0.25); }
+      .custom-header .mobile-menu-content {
+        width: 100%;
+        display: flex !important;
+        height: 50px;
+        align-items: center;
+        justify-content: space-between; }
+        .custom-header .mobile-menu-content .menu-cta .buynow-btn {
+          font-size: .9rem;
+          padding: 0 1rem;
+          font-weight: 600;
+          background-color: #ffca12;
+          line-height: 2.15;
+          display: inline-block;
+          border-radius: 3px; }
+          .custom-header .mobile-menu-content .menu-cta .buynow-btn:hover {
+            color: #434343; }
+        .custom-header .mobile-menu-content .mb-menu-toggle {
+          width: 40px;
+          height: 40px;
+          position: relative; }
+          .custom-header .mobile-menu-content .mb-menu-toggle .fa {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            text-align: center;
+            line-height: 40px;
+            font-size: 24px;
+            color: #434343; }
+            .custom-header .mobile-menu-content .mb-menu-toggle .fa.fa-times {
+              opacity: 0;
+              transition: all ease-in 150ms;
+              transform: rotate(-90deg); }
+            .custom-header .mobile-menu-content .mb-menu-toggle .fa.fa-bars {
+              opacity: 1;
+              transition: all ease-out 200ms 100ms;
+              transform: rotate(0); }
+          .custom-header .mobile-menu-content .mb-menu-toggle.is-show-menu .fa.fa-times {
+            opacity: 1;
+            transition: all ease-out 200ms 100ms;
+            transform: rotate(0); }
+          .custom-header .mobile-menu-content .mb-menu-toggle.is-show-menu .fa.fa-bars {
+            opacity: 0;
+            transition: all ease-out 150ms;
+            transform: rotate(90deg); } }
+
+#realme-c3-page {
+  padding-top: 30px;
+  font-family: 'Open Sans', sans-serif; }
+  #realme-c3-page img, #realme-c3-page picture {
+    display: block;
+    max-width: 100%; }
+  #realme-c3-page .img-holder {
+    width: 100%; }
+    #realme-c3-page .img-holder img, #realme-c3-page .img-holder picture {
+      width: 100%; }
+    #realme-c3-page .img-holder video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center; }
+  #realme-c3-page .mold {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; }
+    #realme-c3-page .mold img {
+      width: 100%; }
+  #realme-c3-page .main-content {
+    text-align: center; }
+    #realme-c3-page .main-content .section-title {
+      font-size: 3.125rem;
+      font-weight: 600;
+      margin-bottom: 2rem; }
+    #realme-c3-page .main-content .section-sub-title {
+      font-size: 2.5rem;
+      font-weight: 600; }
+    #realme-c3-page .main-content .section-desc {
+      font-size: 1.25rem;
+      line-height: 1.75; }
+    @media only screen and (max-width: 1920px) {
+      #realme-c3-page .main-content .section-title {
+        font-size: 2.434375rem;
+        margin-bottom: 1.35rem; }
+      #realme-c3-page .main-content .section-sub-title {
+        font-size: 1.875rem; }
+      #realme-c3-page .main-content .section-desc {
+        font-size: 0.9375rem; } }
+    @media only screen and (max-width: 1368px) {
+      #realme-c3-page .main-content .section-title {
+        font-size: 2.15rem;
+        margin-bottom: 1.15rem; }
+      #realme-c3-page .main-content .section-sub-title {
+        font-size: 1.65rem; }
+      #realme-c3-page .main-content .section-desc {
+        font-size: 0.9rem; } }
+    @media only screen and (max-width: 1280px) {
+      #realme-c3-page .main-content .section-title {
+        font-size: 2rem;
+        margin-bottom: 1rem; }
+      #realme-c3-page .main-content .section-sub-title {
+        font-size: 1.45rem; }
+      #realme-c3-page .main-content .section-desc {
+        font-size: 0.9rem; } }
+    @media only screen and (max-width: 768px) {
+      #realme-c3-page .main-content {
+        text-align: left; }
+        #realme-c3-page .main-content .section-title {
+          font-size: 2rem;
+          margin-bottom: .6rem; }
+        #realme-c3-page .main-content .section-sub-title {
+          font-size: 1.85rem; }
+        #realme-c3-page .main-content .section-desc {
+          font-size: 1.1rem;
+          line-height: 1.75; } }
+    @media only screen and (max-width: 480px) {
+      #realme-c3-page .main-content .section-title {
+        font-size: 1.5rem;
+        margin-bottom: .65rem; }
+      #realme-c3-page .main-content .section-sub-title {
+        font-size: 1.35rem; }
+      #realme-c3-page .main-content .section-desc {
+        font-size: .85rem;
+        line-height: 1.75; } }
+    @media only screen and (max-width: 376px) {
+      #realme-c3-page .main-content .section-title {
+        font-size: 1.35rem;
+        margin-bottom: .5rem; }
+      #realme-c3-page .main-content .section-sub-title {
+        font-size: 1.15rem; }
+      #realme-c3-page .main-content .section-desc {
+        font-size: .75rem;
+        line-height: 1.65; } }
+  #realme-c3-page .section-social-comment {
+    padding: 3rem 0 2rem; }
+  @media only screen and (max-width: 768px) {
+    #realme-c3-page {
+      padding-top: 50px; } }
+
+#realme-c3-page .section-banner {
+  position: relative;
+  height: 39.0625vw;
+  overflow: hidden;
+  /* === RESPONSIVE === */ }
+  #realme-c3-page .section-banner .bg-holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  #realme-c3-page .section-banner .phone-img {
+    position: absolute;
+    width: 21.5%;
+    top: 12.7%;
+    left: 26.8%; }
+  #realme-c3-page .section-banner .main-content {
+    position: absolute;
+    width: 23.9%;
+    top: 40.8%;
+    left: 49.8%; }
+    #realme-c3-page .section-banner .main-content .logo-holder {
+      width: 67%;
+      margin: auto;
+      margin-bottom: 1.45rem; }
+    #realme-c3-page .section-banner .main-content .content-holder {
+      color: #222;
+      text-align: center; }
+      #realme-c3-page .section-banner .main-content .content-holder .feature-txt, #realme-c3-page .section-banner .main-content .content-holder .open-sale-txt {
+        font-size: 2.0625rem;
+        line-height: 1.35;
+        white-space: nowrap; }
+      #realme-c3-page .section-banner .main-content .content-holder .feature-txt {
+        margin-bottom: 2.625rem; }
+      #realme-c3-page .section-banner .main-content .content-holder .price-txt {
+        font-size: 2.375rem; }
+  @media only screen and (max-width: 1920px) {
+    #realme-c3-page .section-banner {
+      height: 750px;
+      width: 1920px;
+      margin-left: calc((100% - 1920px) / 2); }
+      #realme-c3-page .section-banner .logo-holder {
+        margin-bottom: 1.35rem; }
+      #realme-c3-page .section-banner .main-content {
+        position: absolute;
+        width: 23.9%;
+        top: 40.8%;
+        left: 49.8%; }
+        #realme-c3-page .section-banner .main-content .logo-holder {
+          width: 67%;
+          margin: auto;
+          margin-bottom: 1.25rem; }
+        #realme-c3-page .section-banner .main-content .content-holder {
+          color: #222;
+          text-align: center; }
+          #realme-c3-page .section-banner .main-content .content-holder .feature-txt, #realme-c3-page .section-banner .main-content .content-holder .open-sale-txt {
+            font-size: 1.55rem;
+            line-height: 1.35;
+            white-space: nowrap; }
+          #realme-c3-page .section-banner .main-content .content-holder .feature-txt {
+            margin-bottom: 2.5rem; }
+          #realme-c3-page .section-banner .main-content .content-holder .price-txt {
+            font-size: 1.96875rem; } }
+  @media only screen and (max-width: 768px) {
+    #realme-c3-page .section-banner {
+      width: 100%;
+      height: auto;
+      margin-left: 0; }
+      #realme-c3-page .section-banner .bg-holder {
+        position: static; }
+      #realme-c3-page .section-banner .phone-img {
+        width: 73.333%;
+        top: 32.037%;
+        left: 13.88889%; }
+      #realme-c3-page .section-banner .main-content {
+        width: 100%;
+        top: 6.29%;
+        left: 0; }
+        #realme-c3-page .section-banner .main-content .logo-holder {
+          width: 45.277%;
+          margin-bottom: 1.45rem; }
+        #realme-c3-page .section-banner .main-content .content-holder {
+          white-space: nowrap; }
+          #realme-c3-page .section-banner .main-content .content-holder .feature-txt, #realme-c3-page .section-banner .main-content .content-holder .open-sale-txt {
+            font-size: 2rem;
+            line-height: 1.35; }
+          #realme-c3-page .section-banner .main-content .content-holder .feature-txt {
+            margin-bottom: 1.5rem; }
+          #realme-c3-page .section-banner .main-content .content-holder .price-txt {
+            font-size: 2.4rem;
+            font-weight: 600; } }
+  @media only screen and (max-width: 480px) {
+    #realme-c3-page .section-banner .main-content .logo-holder {
+      width: 45.277%;
+      margin-bottom: 1.15rem; }
+    #realme-c3-page .section-banner .main-content .content-holder .feature-txt, #realme-c3-page .section-banner .main-content .content-holder .open-sale-txt {
+      font-size: 1.15rem;
+      line-height: 1.35; }
+    #realme-c3-page .section-banner .main-content .content-holder .feature-txt {
+      margin-bottom: 0.75rem; }
+    #realme-c3-page .section-banner .main-content .content-holder .price-txt {
+      font-size: 1.5rem; } }
+  @media only screen and (max-width: 376px) {
+    #realme-c3-page .section-banner .main-content .logo-holder {
+      width: 45.277%;
+      margin-bottom: 1rem; }
+    #realme-c3-page .section-banner .main-content .content-holder .feature-txt, #realme-c3-page .section-banner .main-content .content-holder .open-sale-txt {
+      font-size: 1rem;
+      line-height: 1.35; }
+    #realme-c3-page .section-banner .main-content .content-holder .feature-txt {
+      margin-bottom: 0.65rem; }
+    #realme-c3-page .section-banner .main-content .content-holder .price-txt {
+      font-size: 1.35rem; } }
+
+#realme-c3-page .section-main-feature {
+  position: relative;
+  height: 33.203125vw;
+  /* === RESPONSIVE === */ }
+  #realme-c3-page .section-main-feature .bg-holder {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
+  #realme-c3-page .section-main-feature .main-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; }
+    #realme-c3-page .section-main-feature .main-content .container {
+      height: 100%;
+      width: 1680px; }
+      #realme-c3-page .section-main-feature .main-content .container .layout-holder {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1.08fr 0.7fr 1fr; }
+        #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.left, #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.right {
+          display: flex;
+          padding-top: 3.37vw; }
+          #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.left .main-feature-list, #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.right .main-feature-list {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            text-align: left; }
+            #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.left .main-feature-list .main-feature-item .feature-name, #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.right .main-feature-list .main-feature-item .feature-name {
+              color: #222;
+              font-size: 1.625rem;
+              line-height: 2.1875rem;
+              margin-bottom: 0.3rem;
+              font-weight: 600;
+              white-space: nowrap; }
+            #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.left .main-feature-list .main-feature-item .feature-detail, #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.right .main-feature-list .main-feature-item .feature-detail {
+              color: #4D6C94;
+              font-size: 1.25rem;
+              line-height: 1.6875;
+              white-space: nowrap; }
+        #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.left {
+          padding-left: 29.5%; }
+          #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.left .main-feature-list {
+            height: 22.3vw; }
+        #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.right {
+          padding-left: 12%; }
+          #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.right .main-feature-list {
+            height: 23.75vw; }
+        #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.center {
+          position: relative; }
+          #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.center .img-holder {
+            position: absolute; }
+            #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.center .img-holder.phone-blue, #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.center .img-holder.phone-red {
+              width: 51.5%; }
+            #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.center .img-holder.phone-blue {
+              top: 8%;
+              left: 5%; }
+            #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.center .img-holder.phone-red {
+              top: 28%;
+              left: 42%; }
+  @media only screen and (max-width: 1920px) {
+    #realme-c3-page .section-main-feature {
+      height: 637.5px;
+      width: 1920px;
+      margin-left: calc((100% - 1920px) / 2); }
+      #realme-c3-page .section-main-feature .main-content .container {
+        width: 1200px; }
+        #realme-c3-page .section-main-feature .main-content .container .layout-holder {
+          height: 100%;
+          grid-template-columns: 1.08fr 0.7fr 1fr; }
+          #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.left, #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.right {
+            padding-top: 58.75px; }
+            #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.left .main-feature-list .main-feature-item .feature-name, #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.right .main-feature-list .main-feature-item .feature-name {
+              font-size: 1.21875rem;
+              line-height: 1.640625rem;
+              margin-bottom: 0.2rem; }
+            #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.left .main-feature-list .main-feature-item .feature-detail, #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.right .main-feature-list .main-feature-item .feature-detail {
+              font-size: 0.9375rem;
+              line-height: 1.6875rem; }
+          #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.left {
+            padding-left: 29.5%; }
+            #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.left .main-feature-list {
+              height: 431.25px; }
+          #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.right {
+            padding-left: 12%; }
+            #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.right .main-feature-list {
+              height: 454.5px; }
+          #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.center .img-holder.phone-blue, #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.center .img-holder.phone-red {
+            width: 52%; }
+          #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.center .img-holder.phone-blue {
+            top: 7.7%;
+            left: 5%; }
+          #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.center .img-holder.phone-red {
+            top: 27%;
+            left: 42%; } }
+  @media only screen and (max-width: 768px) {
+    #realme-c3-page .section-main-feature {
+      width: 100%;
+      height: auto;
+      margin-left: 0; }
+      #realme-c3-page .section-main-feature .main-content .container {
+        height: 100%;
+        width: 100%; }
+        #realme-c3-page .section-main-feature .main-content .container .layout-holder {
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr; }
+          #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.left, #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.right {
+            padding-top: 0;
+            padding-left: 0;
+            display: flex;
+            align-items: center; }
+            #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.left .main-feature-list, #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.right .main-feature-list {
+              height: 80%;
+              justify-content: space-around;
+              flex: 1; }
+              #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.left .main-feature-list .main-feature-item .feature-name, #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.right .main-feature-list .main-feature-item .feature-name {
+                font-size: 1.55rem;
+                line-height: 2;
+                margin-bottom: 0.3rem; }
+              #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.left .main-feature-list .main-feature-item .feature-detail, #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.right .main-feature-list .main-feature-item .feature-detail {
+                font-size: 1.35rem;
+                line-height: 1.6875; }
+            #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.left .phone-img-holder, #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.right .phone-img-holder {
+              width: 48%;
+              flex-shrink: 0;
+              display: flex !important;
+              justify-content: center;
+              align-items: center; }
+              #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.left .phone-img-holder img, #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.right .phone-img-holder img {
+                width: 70%;
+                margin: auto; }
+          #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.left {
+            padding-left: 0; }
+            #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.left .main-feature-list {
+              height: 80%;
+              text-align: left; }
+          #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.right {
+            padding-left: 0; }
+            #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.right .main-feature-list {
+              height: 80%;
+              text-align: right; } }
+  @media only screen and (max-width: 480px) {
+    #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.left .main-feature-list, #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.right .main-feature-list {
+      width: 52%;
+      flex-shrink: 0; }
+      #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.left .main-feature-list .main-feature-item .feature-name, #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.right .main-feature-list .main-feature-item .feature-name {
+        font-size: 0.95rem;
+        line-height: 1.35;
+        margin-bottom: 0.1rem; }
+      #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.left .main-feature-list .main-feature-item .feature-detail, #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.right .main-feature-list .main-feature-item .feature-detail {
+        font-size: 0.8rem;
+        line-height: 1.3; }
+    #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.left .phone-img-holder, #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.right .phone-img-holder {
+      width: 48%; }
+    #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.left .main-feature-list {
+      height: 90%; }
+    #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.right .main-feature-list {
+      height: 90%; } }
+  @media only screen and (max-width: 376px) {
+    #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.left .main-feature-list .main-feature-item .feature-name, #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.right .main-feature-list .main-feature-item .feature-name {
+      font-size: 0.9rem;
+      line-height: 1.35;
+      margin-bottom: 0.1rem; }
+    #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.left .main-feature-list .main-feature-item .feature-detail, #realme-c3-page .section-main-feature .main-content .container .layout-holder .column.right .main-feature-list .main-feature-item .feature-detail {
+      font-size: 0.75rem;
+      line-height: 1.3; } }
+
+#realme-c3-page .section-intro-video {
+  position: relative;
+  overflow: hidden;
+  height: 50vw;
+  /* === RESPONSIVE === */ }
+  #realme-c3-page .section-intro-video .bg-holder {
+    width: 100%; }
+  #realme-c3-page .section-intro-video .play-btn {
+    position: absolute;
+    width: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  @media only screen and (max-width: 1920px) {
+    #realme-c3-page .section-intro-video .bg-holder {
+      width: 1920px;
+      height: 960px;
+      margin-left: calc((100% - 1920px) / 2); }
+    #realme-c3-page .section-intro-video .play-btn {
+      width: 60px; } }
+  @media only screen and (max-width: 768px) {
+    #realme-c3-page .section-intro-video {
+      height: 55vw; }
+      #realme-c3-page .section-intro-video .bg-holder {
+        width: 100%;
+        margin-left: 0; }
+      #realme-c3-page .section-intro-video .play-btn {
+        width: 50px; } }
+
+#realme-c3-page {
+  /* == RESPONSIVE === */ }
+  #realme-c3-page .section-phone-review {
+    padding: 2.734375vw 0 4vw; }
+    #realme-c3-page .section-phone-review .heading {
+      text-align: center;
+      font-size: 2.5rem;
+      padding-bottom: 2rem; }
+    #realme-c3-page .section-phone-review .review-slider-holder .news-slider {
+      position: relative; }
+      #realme-c3-page .section-phone-review .review-slider-holder .news-slider .news-item {
+        padding: 0 10px;
+        cursor: pointer; }
+        #realme-c3-page .section-phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper {
+          display: block;
+          background-color: rgba(0, 0, 0, 0.45);
+          border-radius: 30px;
+          border: 5px solid #ffc915;
+          padding: 20px; }
+          #realme-c3-page .section-phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-thumbnail {
+            background-color: #FFF;
+            margin-bottom: 22px;
+            overflow: hidden;
+            border-radius: 20px;
+            height: 240px; }
+            #realme-c3-page .section-phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-thumbnail img {
+              min-width: 100%;
+              min-height: 100%;
+              object-fit: cover;
+              object-position: center; }
+          #realme-c3-page .section-phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context {
+            height: 240px;
+            overflow: hidden; }
+            #realme-c3-page .section-phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-title, #realme-c3-page .section-phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-date, #realme-c3-page .section-phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-desc {
+              margin-top: 0;
+              margin-bottom: 12px;
+              text-align: left; }
+            #realme-c3-page .section-phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-title {
+              font-weight: 800;
+              font-size: 1.25rem;
+              color: #FFF; }
+            #realme-c3-page .section-phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-date {
+              color: #ffca12;
+              font-weight: 800;
+              font-size: 1.25rem; }
+            #realme-c3-page .section-phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-desc {
+              font-size: 1rem;
+              line-height: 1.42rem;
+              color: #FFF; }
+      #realme-c3-page .section-phone-review .review-slider-holder .news-slider .slick-control {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 2px;
+        border: 4px solid #333;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        top: calc(50% - 15px);
+        background-color: transparent;
+        outline: none; }
+        #realme-c3-page .section-phone-review .review-slider-holder .news-slider .slick-control.slick-next {
+          border-left: none;
+          border-bottom: none;
+          right: -20px;
+          animation: slickButtonFloat 0.75s 0.375s infinite linear; }
+        #realme-c3-page .section-phone-review .review-slider-holder .news-slider .slick-control.slick-prev {
+          border-right: none;
+          border-top: none;
+          left: -20px;
+          animation: slickButtonFloat 0.75s infinite linear; }
+    #realme-c3-page .section-phone-review .realme-c3-explore {
+      padding-top: 4rem; }
+      #realme-c3-page .section-phone-review .realme-c3-explore .seemore {
+        font-size: 1.875rem;
+        color: #FFD271;
+        font-weight: 600;
+        width: 100%;
+        text-align: center; }
+        #realme-c3-page .section-phone-review .realme-c3-explore .seemore .plus-sign:after {
+          content: '+';
+          color: #FFD271;
+          font-size: 2.25rem; }
+    @media only screen and (max-width: 1920px) {
+      #realme-c3-page .section-phone-review .heading {
+        font-size: 1.875rem; } }
+  @media (max-width: 1680px) {
+    #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item {
+      padding: 0 8px; }
+      #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper {
+        border-radius: 24px;
+        border: 4px solid #FFF;
+        padding: 17px; }
+        #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-thumbnail {
+          margin-bottom: 18px;
+          border-radius: 16px;
+          height: 220px; }
+        #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context {
+          height: 220px; }
+          #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-title, #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-date, #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-desc {
+            margin-top: 0;
+            margin-bottom: 10px; }
+          #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-title {
+            font-size: 1.2em; }
+          #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-date {
+            font-size: 1.2em; }
+          #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-desc {
+            font-size: 0.95em; } }
+  @media (max-width: 1540px) {
+    #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item {
+      padding: 0 8px; }
+      #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper {
+        border-radius: 20px;
+        border: 3px solid #FFF;
+        padding: 15px; }
+        #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-thumbnail {
+          margin-bottom: 15px;
+          border-radius: 13px;
+          height: 220px; }
+        #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context {
+          height: 220px; }
+          #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-title, #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-date, #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-desc {
+            margin-top: 0;
+            margin-bottom: 10px; }
+          #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-title {
+            font-size: 1.15em; }
+          #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-date {
+            font-size: 1.15em; }
+          #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-desc {
+            font-size: 0.95em; } }
+  @media only screen and (max-width: 1368px) {
+    #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item {
+      padding: 0 8px; }
+      #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper {
+        border-radius: 18px;
+        border: 2px solid #FFF;
+        padding: 12px; }
+        #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-thumbnail {
+          margin-bottom: 15px;
+          border-radius: 13px;
+          height: 180px; }
+        #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context {
+          height: 200px; }
+          #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-title, #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-date, #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-desc {
+            margin-bottom: 8px; }
+          #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-title {
+            font-size: 1em; }
+          #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-date {
+            font-size: 1em; }
+          #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-desc {
+            font-size: 0.85em; } }
+  @media only screen and (max-width: 1280px) {
+    #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item {
+      padding: 0 8px; }
+      #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper {
+        border-radius: 18px;
+        border: 2px solid #FFF;
+        padding: 12px; }
+        #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-thumbnail {
+          margin-bottom: 15px;
+          border-radius: 10px;
+          height: 160px; }
+        #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context {
+          height: 190px; }
+          #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-title, #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-date, #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-desc {
+            margin-bottom: 8px; }
+          #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-title {
+            font-size: 0.95em; }
+          #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-date {
+            font-size: 0.95em; }
+          #realme-c3-page .phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-desc {
+            font-size: 0.8em; } }
+  @media only screen and (max-width: 768px) {
+    #realme-c3-page .section-phone-review {
+      padding: 10vw 30px 14vw; }
+      #realme-c3-page .section-phone-review .heading {
+        padding-bottom: 1.5rem; }
+        #realme-c3-page .section-phone-review .heading .section-title {
+          font-size: 1.7rem; }
+      #realme-c3-page .section-phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper {
+        border-radius: 22px;
+        border: 3px solid #ffc915;
+        padding: 15px; }
+        #realme-c3-page .section-phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-thumbnail {
+          background-color: #FFF;
+          margin-bottom: 22px;
+          overflow: hidden;
+          border-radius: 15px;
+          height: 200px; }
+        #realme-c3-page .section-phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context {
+          height: 220px;
+          overflow: hidden; }
+          #realme-c3-page .section-phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-title, #realme-c3-page .section-phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-date, #realme-c3-page .section-phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-desc {
+            margin-bottom: 10px; }
+          #realme-c3-page .section-phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-title {
+            font-size: 1.05rem; }
+          #realme-c3-page .section-phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-date {
+            font-size: 1.05rem; }
+          #realme-c3-page .section-phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-desc {
+            font-size: 0.9rem;
+            line-height: 1.42rem; }
+      #realme-c3-page .section-phone-review .review-slider-holder .news-slider .slick-control {
+        width: 24px;
+        height: 24px;
+        border-radius: 2px;
+        border: 3px solid #333;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        top: calc(50% - 12px); }
+        #realme-c3-page .section-phone-review .review-slider-holder .news-slider .slick-control.slick-next {
+          border-left: none;
+          border-bottom: none;
+          right: -18px; }
+        #realme-c3-page .section-phone-review .review-slider-holder .news-slider .slick-control.slick-prev {
+          border-right: none;
+          border-top: none;
+          left: -18px; }
+      #realme-c3-page .section-phone-review .realme-c3-explore {
+        padding-top: 2rem; }
+        #realme-c3-page .section-phone-review .realme-c3-explore .seemore {
+          font-size: 1.875rem; }
+          #realme-c3-page .section-phone-review .realme-c3-explore .seemore .plus-sign:after {
+            content: '+';
+            font-size: 2.25rem; } }
+  @media only screen and (max-width: 480px) {
+    #realme-c3-page .section-phone-review .realme-c3-explore .seemore {
+      font-size: 1.25rem; }
+      #realme-c3-page .section-phone-review .realme-c3-explore .seemore .plus-sign:after {
+        font-size: 1.65rem; } }
+  @media only screen and (max-width: 376px) {
+    #realme-c3-page .section-phone-review {
+      padding: 10vw 20px 14vw; }
+      #realme-c3-page .section-phone-review .heading .section-title {
+        font-size: 1.25rem; }
+      #realme-c3-page .section-phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper {
+        border-radius: 18px;
+        border: 3px solid #ffc915;
+        padding: 13px; }
+        #realme-c3-page .section-phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-thumbnail {
+          background-color: #FFF;
+          margin-bottom: 18px;
+          border-radius: 12px;
+          height: 190px; }
+        #realme-c3-page .section-phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context {
+          height: 190px;
+          overflow: hidden; }
+          #realme-c3-page .section-phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-title, #realme-c3-page .section-phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-date, #realme-c3-page .section-phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-desc {
+            margin-bottom: 10px; }
+          #realme-c3-page .section-phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-title {
+            font-size: .95rem; }
+          #realme-c3-page .section-phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-date {
+            font-size: .95rem; }
+          #realme-c3-page .section-phone-review .review-slider-holder .news-slider .news-item .news-link-wrapper .news-context .news-desc {
+            font-size: 0.8rem;
+            line-height: 1.42rem; }
+      #realme-c3-page .section-phone-review .review-slider-holder .news-slider .slick-control {
+        width: 20px;
+        height: 20px;
+        border-radius: 2px;
+        top: calc(50% - 10px); }
+        #realme-c3-page .section-phone-review .review-slider-holder .news-slider .slick-control.slick-next {
+          right: -14px; }
+        #realme-c3-page .section-phone-review .review-slider-holder .news-slider .slick-control.slick-prev {
+          left: -14px; } }
+
+@keyframes slickButtonFloat {
+  0% {
+    transform: translateX(0) rotate(45deg); }
+  25% {
+    transform: translateX(-1px) rotate(45deg); }
+  50% {
+    transform: translateX(0) rotate(45deg); }
+  75% {
+    transform: translateX(1px) rotate(45deg); }
+  100% {
+    transform: translateX(0) rotate(45deg); } }
+
+#realme-c3-page {
+  /* === RESPONSIVE === */ }
+  #realme-c3-page .section-camera-intro {
+    position: relative;
+    height: 44.140625vw;
+    overflow: hidden; }
+    #realme-c3-page .section-camera-intro .bg-holder {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+    #realme-c3-page .section-camera-intro .main-content {
+      position: absolute;
+      top: 3.25vw;
+      left: 0;
+      right: 0; }
+    #realme-c3-page .section-camera-intro .effect-holder {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+      #realme-c3-page .section-camera-intro .effect-holder .phone-img, #realme-c3-page .section-camera-intro .effect-holder .lens-img, #realme-c3-page .section-camera-intro .effect-holder .camera-feature-list {
+        position: absolute; }
+      #realme-c3-page .section-camera-intro .effect-holder .phone-img {
+        width: 22.5%;
+        left: 36.71875%;
+        bottom: 0; }
+      #realme-c3-page .section-camera-intro .effect-holder .lens-img {
+        width: 17.5%;
+        position: absolute;
+        left: 22.3%;
+        bottom: 33.3%; }
+        #realme-c3-page .section-camera-intro .effect-holder .lens-img .mold {
+          width: 100%;
+          opacity: 0.95;
+          position: static;
+          visibility: hidden; }
+        #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img .lens-holder {
+            position: absolute; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-1 .lens-holder.lens-1 {
+            top: 1.7%;
+            right: 14.4%;
+            width: 9.5%; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-1 .lens-holder.lens-2 {
+            top: 0.7%;
+            right: 25%;
+            width: 9.2%; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-1 .lens-holder.lens-3 {
+            top: 1%;
+            right: 35.8%;
+            width: 9.7%; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-1 .lens-holder.lens-4 {
+            top: 1.2%;
+            right: 46.5%;
+            width: 9%; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-1 .lens-holder.lens-5 {
+            top: 0.1%;
+            right: 57.5%;
+            width: 9.4%; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-2 .lens-holder.lens-base {
+            top: 32.2%;
+            right: 0;
+            width: 18%; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-2 .lens-holder.lens-1 {
+            top: 31.7%;
+            right: 11.7%;
+            width: 16.5%; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-2 .lens-holder.lens-2 {
+            top: 33.5%;
+            right: 30%;
+            width: 15%; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-2 .lens-holder.lens-3 {
+            top: 34.4%;
+            right: 45.5%;
+            width: 14.2%; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-2 .lens-holder.lens-4 {
+            top: 35.2%;
+            right: 60.2%;
+            width: 12.5%; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-2 .lens-holder.lens-5 {
+            top: 36.5%;
+            right: 74.7%;
+            width: 11.7%; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-2 .lens-holder.lens-6 {
+            top: 36%;
+            right: 88%;
+            width: 12%; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-3 .lens-holder.lens-1 {
+            top: 81.6%;
+            right: 14%;
+            width: 9.9%; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-3 .lens-holder.lens-2 {
+            top: 82.3%;
+            right: 25.5%;
+            width: 8.7%; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-3 .lens-holder.lens-3 {
+            top: 81.7%;
+            right: 35%;
+            width: 9.5%; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-3 .lens-holder.lens-4 {
+            top: 81.7%;
+            right: 46%;
+            width: 9.2%; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-3 .lens-holder.lens-5 {
+            top: 81.8%;
+            right: 57%;
+            width: 8.7%; }
+      #realme-c3-page .section-camera-intro .effect-holder .camera-feature-list {
+        position: absolute;
+        width: 12.5%;
+        height: 48.67%;
+        bottom: 12.212%;
+        left: 61.1328%; }
+        #realme-c3-page .section-camera-intro .effect-holder .camera-feature-list .feature-list-holder {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between; }
+          #realme-c3-page .section-camera-intro .effect-holder .camera-feature-list .feature-list-holder .feature-item {
+            display: flex;
+            align-items: center; }
+            #realme-c3-page .section-camera-intro .effect-holder .camera-feature-list .feature-list-holder .feature-item .ico-holder {
+              width: 33%;
+              flex-basis: 33%;
+              flex-shrink: 0; }
+              #realme-c3-page .section-camera-intro .effect-holder .camera-feature-list .feature-list-holder .feature-item .ico-holder .img-holder {
+                width: 55%;
+                margin: auto; }
+            #realme-c3-page .section-camera-intro .effect-holder .camera-feature-list .feature-list-holder .feature-item .feature-detail .feature-title {
+              font-size: 2.375rem;
+              line-height: 1.05;
+              margin-bottom: 0.22rem;
+              font-weight: 600;
+              white-space: nowrap; }
+            #realme-c3-page .section-camera-intro .effect-holder .camera-feature-list .feature-list-holder .feature-item .feature-detail .feature-desc {
+              font-size: 1.25em;
+              white-space: nowrap; }
+  @media only screen and (max-width: 1920px) {
+    #realme-c3-page .section-camera-intro {
+      width: 1920px;
+      margin-left: calc((100% - 1920px) / 2);
+      height: 847.5px; }
+      #realme-c3-page .section-camera-intro .main-content {
+        top: 52px; }
+      #realme-c3-page .section-camera-intro .effect-holder .camera-feature-list .feature-list-holder .feature-item .feature-detail .feature-title {
+        font-size: 1.78125rem; }
+      #realme-c3-page .section-camera-intro .effect-holder .camera-feature-list .feature-list-holder .feature-item .feature-detail .feature-desc {
+        font-size: 0.9375em;
+        white-space: nowrap; } }
+  @media only screen and (max-width: 768px) {
+    #realme-c3-page .section-camera-intro {
+      width: 100%;
+      margin-left: 0;
+      height: auto; }
+      #realme-c3-page .section-camera-intro .bg-holder {
+        position: static; }
+      #realme-c3-page .section-camera-intro .main-content {
+        position: absolute;
+        top: 8vw;
+        left: 0;
+        right: 0;
+        text-align: left; }
+        #realme-c3-page .section-camera-intro .main-content .camera-feature-list {
+          width: 100%;
+          margin-top: 1.2rem; }
+          #realme-c3-page .section-camera-intro .main-content .camera-feature-list .feature-list-holder {
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between; }
+            #realme-c3-page .section-camera-intro .main-content .camera-feature-list .feature-list-holder .feature-item {
+              display: flex;
+              align-items: center;
+              flex-basis: 50%;
+              width: 50%;
+              margin-bottom: 1rem; }
+              #realme-c3-page .section-camera-intro .main-content .camera-feature-list .feature-list-holder .feature-item .ico-holder {
+                width: 28%;
+                flex-basis: 28%;
+                flex-shrink: 0; }
+                #realme-c3-page .section-camera-intro .main-content .camera-feature-list .feature-list-holder .feature-item .ico-holder .img-holder {
+                  width: 55%;
+                  margin: auto; }
+              #realme-c3-page .section-camera-intro .main-content .camera-feature-list .feature-list-holder .feature-item .feature-detail .feature-title {
+                font-size: 1rem;
+                line-height: 1.05;
+                font-weight: 600;
+                margin-bottom: 0.4rem; }
+              #realme-c3-page .section-camera-intro .main-content .camera-feature-list .feature-list-holder .feature-item .feature-detail .feature-desc {
+                font-size: .75rem;
+                line-height: 1.35; }
+      #realme-c3-page .section-camera-intro .effect-holder .phone-img {
+        width: 54.1666%;
+        left: 41.6666%;
+        bottom: 0; }
+      #realme-c3-page .section-camera-intro .effect-holder .lens-img {
+        width: 45%;
+        left: 4.4444%;
+        bottom: 18.6666%; }
+        #realme-c3-page .section-camera-intro .effect-holder .lens-img .mold {
+          width: 100%;
+          position: static;
+          visibility: hidden; }
+        #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img .lens-holder {
+            position: absolute; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-1 .lens-holder.lens-1 {
+            top: 1.7%;
+            right: 14.4%;
+            width: 9.5%; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-1 .lens-holder.lens-2 {
+            top: 0.7%;
+            right: 25%;
+            width: 9.2%; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-1 .lens-holder.lens-3 {
+            top: 1%;
+            right: 35.8%;
+            width: 9.7%; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-1 .lens-holder.lens-4 {
+            top: 1.2%;
+            right: 46.5%;
+            width: 9%; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-1 .lens-holder.lens-5 {
+            top: 0.1%;
+            right: 57.5%;
+            width: 9.4%; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-2 .lens-holder.lens-base {
+            top: 32.2%;
+            right: 0;
+            width: 18%; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-2 .lens-holder.lens-1 {
+            top: 31.7%;
+            right: 12.3%;
+            width: 16.5%; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-2 .lens-holder.lens-2 {
+            top: 33.5%;
+            right: 30%;
+            width: 15%; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-2 .lens-holder.lens-3 {
+            top: 34.4%;
+            right: 45.5%;
+            width: 14.2%; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-2 .lens-holder.lens-4 {
+            top: 35.2%;
+            right: 60.2%;
+            width: 12.5%; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-2 .lens-holder.lens-5 {
+            top: 36.5%;
+            right: 74.7%;
+            width: 11.7%; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-2 .lens-holder.lens-6 {
+            top: 36%;
+            right: 88%;
+            width: 12%; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-3 .lens-holder.lens-1 {
+            top: 81.6%;
+            right: 14%;
+            width: 9.9%; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-3 .lens-holder.lens-2 {
+            top: 82.3%;
+            right: 25.5%;
+            width: 8.7%; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-3 .lens-holder.lens-3 {
+            top: 81.7%;
+            right: 35%;
+            width: 9.5%; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-3 .lens-holder.lens-4 {
+            top: 81.7%;
+            right: 46%;
+            width: 9.2%; }
+          #realme-c3-page .section-camera-intro .effect-holder .lens-img .cam-lens-img.cam-3 .lens-holder.lens-5 {
+            top: 81.8%;
+            right: 57%;
+            width: 8.7%; } }
+
+#realme-c3-page {
+  /* === RESPONSIVE === */ }
+  #realme-c3-page .section-camera-gallery {
+    padding: 4vw 0 8vw; }
+    #realme-c3-page .section-camera-gallery .gallery-slider {
+      width: 150vw;
+      margin-top: 3rem;
+      margin-left: -25vw; }
+      #realme-c3-page .section-camera-gallery .gallery-slider .gallery-slider-list {
+        position: relative;
+        padding-bottom: 2vw; }
+        #realme-c3-page .section-camera-gallery .gallery-slider .gallery-slider-list .img-item {
+          height: 26vw;
+          padding: 0 2.5vw; }
+          #realme-c3-page .section-camera-gallery .gallery-slider .gallery-slider-list .img-item .img-holder {
+            width: 100%;
+            height: 100%; }
+            #realme-c3-page .section-camera-gallery .gallery-slider .gallery-slider-list .img-item .img-holder img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center; }
+        #realme-c3-page .section-camera-gallery .gallery-slider .gallery-slider-list .slick-dots {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          display: flex;
+          justify-content: center; }
+          #realme-c3-page .section-camera-gallery .gallery-slider .gallery-slider-list .slick-dots li button {
+            text-indent: -9999px;
+            background-color: #9B9B9B;
+            display: block;
+            height: 3px;
+            border: none;
+            width: 20px;
+            position: relative;
+            transition: all ease-in 220ms;
+            outline: none; }
+          #realme-c3-page .section-camera-gallery .gallery-slider .gallery-slider-list .slick-dots li.slick-active button {
+            background-color: #ffca12;
+            margin: 0 5px;
+            width: 38px;
+            height: 6px;
+            border-radius: 4px;
+            transform: translateY(-1.5px);
+            transition: all ease-out 220ms; }
+  @media only screen and (max-width: 768px) {
+    #realme-c3-page .section-camera-gallery {
+      padding: 8vw 0 12vw; }
+      #realme-c3-page .section-camera-gallery .main-content.mb-show {
+        padding-top: 3vw; }
+      #realme-c3-page .section-camera-gallery .gallery-slider {
+        width: 100%;
+        margin-top: 2rem;
+        margin-left: 0; }
+        #realme-c3-page .section-camera-gallery .gallery-slider .gallery-slider-list {
+          padding-bottom: 5vw; }
+          #realme-c3-page .section-camera-gallery .gallery-slider .gallery-slider-list .img-item {
+            height: 65vw;
+            padding: 0; }
+          #realme-c3-page .section-camera-gallery .gallery-slider .gallery-slider-list .slick-dots li button {
+            width: 18px; }
+          #realme-c3-page .section-camera-gallery .gallery-slider .gallery-slider-list .slick-dots li.slick-active button {
+            width: 32px; } }
+  @media only screen and (max-width: 480px) {
+    #realme-c3-page .section-camera-gallery .main-content.mb-show {
+      padding-top: 5vw; }
+    #realme-c3-page .section-camera-gallery .gallery-slider {
+      width: 100%;
+      margin-top: 1.75rem; }
+      #realme-c3-page .section-camera-gallery .gallery-slider .gallery-slider-list {
+        padding-bottom: 6vw; }
+        #realme-c3-page .section-camera-gallery .gallery-slider .gallery-slider-list .img-item {
+          height: 70vw;
+          padding: 0; } }
+
+#realme-c3-page .section-closeup-camera {
+  padding: 4vw 0;
+  /* === RESPONSIVE === */ }
+  #realme-c3-page .section-closeup-camera .main-content .column-layout {
+    display: flex;
+    align-items: center; }
+    #realme-c3-page .section-closeup-camera .main-content .column-layout .section-title {
+      width: 60%;
+      flex-shrink: 0;
+      margin: 0; }
+    #realme-c3-page .section-closeup-camera .main-content .column-layout .section-desc {
+      flex: 1;
+      text-align: left; }
+  #realme-c3-page .section-closeup-camera .closeup-gallery-layout {
+    width: 1300px;
+    margin: auto;
+    display: grid;
+    padding: 0 55px;
+    margin-top: 35px;
+    height: 1040px;
+    grid-row-gap: 25px;
+    grid-column-gap: 25px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.879629fr; }
+    #realme-c3-page .section-closeup-camera .closeup-gallery-layout .img-holder {
+      overflow: hidden; }
+      #realme-c3-page .section-closeup-camera .closeup-gallery-layout .img-holder:first-child {
+        grid-column: 1 / span 2; }
+      #realme-c3-page .section-closeup-camera .closeup-gallery-layout .img-holder picture, #realme-c3-page .section-closeup-camera .closeup-gallery-layout .img-holder img {
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+        transition: all 270ms ease-out; }
+      #realme-c3-page .section-closeup-camera .closeup-gallery-layout .img-holder:hover picture, #realme-c3-page .section-closeup-camera .closeup-gallery-layout .img-holder:hover img {
+        transform: scale(1.06);
+        transition: all 1s cubic-bezier(0.09, 0.73, 0.36, 0.99); }
+  @media only screen and (max-width: 1920px) {
+    #realme-c3-page .section-closeup-camera {
+      padding: 40px 0; }
+      #realme-c3-page .section-closeup-camera .main-content .column-layout {
+        width: 975px; }
+      #realme-c3-page .section-closeup-camera .closeup-gallery-layout {
+        width: 975px;
+        margin: auto;
+        display: grid;
+        padding: 0 40px;
+        margin-top: 35px;
+        height: 780px;
+        grid-row-gap: 18px;
+        grid-column-gap: 18px; }
+        #realme-c3-page .section-closeup-camera .closeup-gallery-layout .img-holder:first-child {
+          grid-column: 1 / span 2; }
+        #realme-c3-page .section-closeup-camera .closeup-gallery-layout .img-holder img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center; } }
+  @media only screen and (max-width: 768px) {
+    #realme-c3-page .section-closeup-camera {
+      padding: 3vw 0 8vw; }
+      #realme-c3-page .section-closeup-camera .main-content .column-layout {
+        display: block;
+        padding: 0; }
+        #realme-c3-page .section-closeup-camera .main-content .column-layout .section-title {
+          width: 100%;
+          margin-bottom: 1.5rem;
+          padding: 0 15px; }
+        #realme-c3-page .section-closeup-camera .main-content .column-layout .closeup-pic {
+          height: 67.22vw;
+          width: 80.55%; }
+          #realme-c3-page .section-closeup-camera .main-content .column-layout .closeup-pic .img-holder {
+            width: 100%;
+            height: 100%;
+            overflow: hidden; }
+            #realme-c3-page .section-closeup-camera .main-content .column-layout .closeup-pic .img-holder img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center center; }
+          #realme-c3-page .section-closeup-camera .main-content .column-layout .closeup-pic.pic-1 {
+            margin-left: auto; }
+          #realme-c3-page .section-closeup-camera .main-content .column-layout .closeup-pic.pic-2 {
+            margin-right: auto; }
+        #realme-c3-page .section-closeup-camera .main-content .column-layout .section-desc {
+          text-align: left;
+          padding: 0 15px;
+          margin: 2rem 0; }
+      #realme-c3-page .section-closeup-camera .closeup-gallery-layout {
+        width: 1300px;
+        margin: auto;
+        display: grid;
+        padding: 0 55px;
+        margin-top: 35px;
+        height: 1040px;
+        grid-row-gap: 25px;
+        grid-column-gap: 25px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 0.879629fr; }
+        #realme-c3-page .section-closeup-camera .closeup-gallery-layout .img-holder:first-child {
+          grid-column: 1 / span 2; } }
+
+#realme-c3-page .section-camera-ai {
+  position: relative;
+  height: 50.234375vw;
+  overflow: hidden;
+  /* === RESPONSIVE === */ }
+  #realme-c3-page .section-camera-ai .main-content {
+    position: absolute;
+    z-index: 2;
+    width: 18%;
+    left: 26.5625%;
+    top: 36.75889%;
+    text-align: left; }
+    #realme-c3-page .section-camera-ai .main-content .section-title {
+      white-space: nowrap; }
+  #realme-c3-page .section-camera-ai .bg-holder {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    width: 60.546875%;
+    left: 26.5625%; }
+  #realme-c3-page .section-camera-ai .phone-img {
+    position: absolute;
+    width: 17.03125%;
+    top: 17.23320%;
+    left: 56.0546875%; }
+  @media only screen and (max-width: 1920px) {
+    #realme-c3-page .section-camera-ai {
+      height: 964.5px;
+      width: 1920px;
+      margin-left: calc((100% - 1920px) / 2); } }
+  @media only screen and (max-width: 1368px) {
+    #realme-c3-page .section-camera-ai {
+      height: 845px;
+      width: 1680px;
+      margin-left: calc((100% - 1680px) / 2); } }
+  @media only screen and (max-width: 768px) {
+    #realme-c3-page .section-camera-ai {
+      height: 206.111vw;
+      width: 100%;
+      margin-left: 0; }
+      #realme-c3-page .section-camera-ai .main-content {
+        z-index: 2;
+        width: 100%;
+        left: 0;
+        top: 7%;
+        padding: 0 15px; }
+      #realme-c3-page .section-camera-ai .bg-holder {
+        bottom: 0;
+        width: 177.778%;
+        left: -56.11%; }
+      #realme-c3-page .section-camera-ai .phone-img {
+        width: 56.66667%;
+        top: auto;
+        bottom: 4.5%;
+        left: 20.83333%; } }
+
+#realme-c3-page .section-chipset {
+  position: relative;
+  background-color: #060D17;
+  overflow: hidden;
+  /* === RESPONSIVE === */ }
+  #realme-c3-page .section-chipset .chip-img {
+    position: absolute;
+    top: 0.4%;
+    left: 42.4%;
+    width: 26.5%; }
+    #realme-c3-page .section-chipset .chip-img .chip-effect-holder, #realme-c3-page .section-chipset .chip-img .chip-img-holder {
+      width: 100%; }
+    #realme-c3-page .section-chipset .chip-img .chip-effect-holder.is-shinning {
+      animation: shiningEffect infinite linear 2.25s; }
+    #realme-c3-page .section-chipset .chip-img .chip-img-holder {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0; }
+  #realme-c3-page .section-chipset .main-content {
+    position: absolute;
+    width: 40%;
+    left: 30%;
+    top: 52.6%;
+    color: #FFF;
+    text-align: left;
+    padding: 0 2.6%; }
+    #realme-c3-page .section-chipset .main-content .chipset-feature-list {
+      margin-top: 4.15rem;
+      width: 96%;
+      display: flex;
+      justify-content: space-between; }
+      #realme-c3-page .section-chipset .main-content .chipset-feature-list .feature-item {
+        flex-basis: 24%; }
+        #realme-c3-page .section-chipset .main-content .chipset-feature-list .feature-item .line-1 {
+          font-size: 1.875rem;
+          line-height: 1.15;
+          font-weight: 600; }
+          #realme-c3-page .section-chipset .main-content .chipset-feature-list .feature-item .line-1 .highlight {
+            font-size: 2.375rem; }
+        #realme-c3-page .section-chipset .main-content .chipset-feature-list .feature-item .line-2 {
+          font-size: 1.125rem; }
+  @media only screen and (max-width: 1920px) {
+    #realme-c3-page .section-chipset {
+      width: 1920px;
+      margin-left: calc((100% - 1920px) / 2); }
+      #realme-c3-page .section-chipset .main-content .chipset-feature-list {
+        margin-top: 3.1125rem; }
+        #realme-c3-page .section-chipset .main-content .chipset-feature-list .feature-item .line-1 {
+          font-size: 1.40625rem; }
+          #realme-c3-page .section-chipset .main-content .chipset-feature-list .feature-item .line-1 .highlight {
+            font-size: 1.78125rem; }
+        #realme-c3-page .section-chipset .main-content .chipset-feature-list .feature-item .line-2 {
+          font-size: 0.84375rem; } }
+  @media only screen and (max-width: 768px) {
+    #realme-c3-page .section-chipset {
+      width: 100%;
+      margin-left: 0; }
+      #realme-c3-page .section-chipset .chip-img {
+        top: 59.10138%;
+        left: 1.38888%;
+        width: 76.666667%; }
+        #realme-c3-page .section-chipset .chip-img .chip-effect-holder.is-shinning {
+          animation: shiningEffect infinite linear 2.25s; }
+        #realme-c3-page .section-chipset .chip-img .chip-img-holder {
+          position: absolute;
+          z-index: 2;
+          top: 0;
+          left: 0; }
+      #realme-c3-page .section-chipset .main-content {
+        width: 100%;
+        left: 0;
+        top: 6.221198%;
+        padding: 0 30px; }
+        #realme-c3-page .section-chipset .main-content .chipset-feature-list {
+          margin-top: 1.5rem;
+          width: 100%;
+          flex-wrap: wrap; }
+          #realme-c3-page .section-chipset .main-content .chipset-feature-list .feature-item {
+            flex-basis: 50%;
+            margin-bottom: 1.75rem; }
+            #realme-c3-page .section-chipset .main-content .chipset-feature-list .feature-item .line-1 {
+              font-size: 1.75rem;
+              line-height: 1.5;
+              margin-bottom: .75rem; }
+              #realme-c3-page .section-chipset .main-content .chipset-feature-list .feature-item .line-1 .highlight {
+                font-size: 1.75rem; }
+            #realme-c3-page .section-chipset .main-content .chipset-feature-list .feature-item .line-2 {
+              font-size: 1.1rem; } }
+  @media only screen and (max-width: 480px) {
+    #realme-c3-page .section-chipset .chip-img {
+      top: 59.10138%;
+      left: 1.38888%;
+      width: 76.666667%; }
+      #realme-c3-page .section-chipset .chip-img .chip-effect-holder.is-shinning {
+        animation: shiningEffect infinite linear 2.25s; }
+      #realme-c3-page .section-chipset .chip-img .chip-img-holder {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0; }
+    #realme-c3-page .section-chipset .main-content {
+      width: 100%;
+      left: 0;
+      top: 6.221198%;
+      padding: 0 15px; }
+      #realme-c3-page .section-chipset .main-content .chipset-feature-list {
+        margin-top: 1.5rem;
+        width: 100%;
+        flex-wrap: wrap; }
+        #realme-c3-page .section-chipset .main-content .chipset-feature-list .feature-item {
+          flex-basis: 50%;
+          margin-bottom: 1.5rem; }
+          #realme-c3-page .section-chipset .main-content .chipset-feature-list .feature-item .line-1 {
+            font-size: 1.25rem;
+            line-height: 1.35;
+            margin-bottom: .25rem; }
+            #realme-c3-page .section-chipset .main-content .chipset-feature-list .feature-item .line-1 .highlight {
+              font-size: 1.25rem; }
+          #realme-c3-page .section-chipset .main-content .chipset-feature-list .feature-item .line-2 {
+            font-size: .9rem; } }
+  @media only screen and (max-width: 376px) {
+    #realme-c3-page .section-chipset .main-content .chipset-feature-list {
+      margin-top: 1.25rem; }
+      #realme-c3-page .section-chipset .main-content .chipset-feature-list .feature-item {
+        margin-bottom: 1.35rem; }
+        #realme-c3-page .section-chipset .main-content .chipset-feature-list .feature-item .line-1 {
+          font-size: 1.15rem;
+          line-height: 1.25;
+          margin-bottom: .2rem; }
+          #realme-c3-page .section-chipset .main-content .chipset-feature-list .feature-item .line-1 .highlight {
+            font-size: 1.15rem; }
+        #realme-c3-page .section-chipset .main-content .chipset-feature-list .feature-item .line-2 {
+          font-size: .85rem; } }
+
+/* === Support Content / Classes === */
+@keyframes shiningEffect {
+  0% {
+    opacity: 1;
+    -moz-transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98); }
+  50% {
+    opacity: 0.9;
+    -moz-transform: scale(0.94);
+    -webkit-transform: scale(0.94);
+    transform: scale(0.94);
+    -webkit-filter: brightness(0.8);
+    filter: brightness(0.8); }
+  100% {
+    opacity: 1;
+    -moz-transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98); } }
+
+#realme-c3-page .section-game-performance {
+  position: relative;
+  /* === RESPONSIVE === */ }
+  #realme-c3-page .section-game-performance .main-content {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 46.875%;
+    width: 35%; }
+    #realme-c3-page .section-game-performance .main-content .performance-detail {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left; }
+      #realme-c3-page .section-game-performance .main-content .performance-detail .detail-title {
+        font-weight: 600;
+        font-size: 3.125rem;
+        margin-bottom: 1rem; }
+      #realme-c3-page .section-game-performance .main-content .performance-detail .detail-sub-title {
+        font-weight: 600;
+        font-size: 2.5rem; }
+      #realme-c3-page .section-game-performance .main-content .performance-detail .detail-meter {
+        margin-top: 2rem; }
+        #realme-c3-page .section-game-performance .main-content .performance-detail .detail-meter .detail-meter-item {
+          margin-bottom: 1.5rem; }
+          #realme-c3-page .section-game-performance .main-content .performance-detail .detail-meter .detail-meter-item .label {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 600; }
+          #realme-c3-page .section-game-performance .main-content .performance-detail .detail-meter .detail-meter-item .value {
+            font-size: 2rem;
+            margin-top: 0.15rem;
+            font-weight: 600; }
+          #realme-c3-page .section-game-performance .main-content .performance-detail .detail-meter .detail-meter-item .meter-pointer {
+            height: 42px;
+            width: 100%;
+            background-image: linear-gradient(to right, #5CFCFF, #414AFF); }
+  @media only screen and (max-width: 1920px) {
+    #realme-c3-page .section-game-performance {
+      width: 1920px;
+      margin-left: calc((100% - 1920px) / 2); }
+      #realme-c3-page .section-game-performance .main-content .performance-detail .detail-title {
+        font-size: 2.34375rem;
+        margin-bottom: .75rem; }
+      #realme-c3-page .section-game-performance .main-content .performance-detail .detail-sub-title {
+        font-size: 1.875rem; }
+      #realme-c3-page .section-game-performance .main-content .performance-detail .detail-meter {
+        margin-top: 1.5rem; }
+        #realme-c3-page .section-game-performance .main-content .performance-detail .detail-meter .detail-meter-item {
+          margin-bottom: 1.125rem; }
+          #realme-c3-page .section-game-performance .main-content .performance-detail .detail-meter .detail-meter-item .label {
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-weight: 600; }
+          #realme-c3-page .section-game-performance .main-content .performance-detail .detail-meter .detail-meter-item .value {
+            font-size: 1.5rem;
+            margin-top: 0.1125rem;
+            font-weight: 600; }
+          #realme-c3-page .section-game-performance .main-content .performance-detail .detail-meter .detail-meter-item .meter-pointer {
+            height: 31.5px; } }
+  @media only screen and (max-width: 768px) {
+    #realme-c3-page .section-game-performance {
+      width: 100%;
+      margin-left: 0; }
+      #realme-c3-page .section-game-performance .main-content {
+        position: static;
+        width: 100%; }
+        #realme-c3-page .section-game-performance .main-content .performance-detail {
+          position: static;
+          padding: 4vw 30px; }
+          #realme-c3-page .section-game-performance .main-content .performance-detail .detail-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem; }
+          #realme-c3-page .section-game-performance .main-content .performance-detail .detail-sub-title {
+            font-size: 2rem; }
+          #realme-c3-page .section-game-performance .main-content .performance-detail .detail-meter {
+            margin-top: 1.5rem; }
+            #realme-c3-page .section-game-performance .main-content .performance-detail .detail-meter .detail-meter-item {
+              margin-bottom: 1.25rem; }
+              #realme-c3-page .section-game-performance .main-content .performance-detail .detail-meter .detail-meter-item .label {
+                font-size: 1.5rem;
+                margin-bottom: 0.75rem; }
+              #realme-c3-page .section-game-performance .main-content .performance-detail .detail-meter .detail-meter-item .value {
+                font-size: 1.5rem;
+                margin-top: 0.15rem; }
+              #realme-c3-page .section-game-performance .main-content .performance-detail .detail-meter .detail-meter-item .meter-pointer {
+                height: 38px;
+                width: 95%; } }
+  @media only screen and (max-width: 480px) {
+    #realme-c3-page .section-game-performance .main-content .performance-detail {
+      padding: 5vw 15px; }
+      #realme-c3-page .section-game-performance .main-content .performance-detail .detail-title {
+        font-size: 1.35rem;
+        margin-bottom: 0.75rem; }
+      #realme-c3-page .section-game-performance .main-content .performance-detail .detail-sub-title {
+        font-size: 1.15rem; }
+      #realme-c3-page .section-game-performance .main-content .performance-detail .detail-meter {
+        margin-top: 1.25rem; }
+        #realme-c3-page .section-game-performance .main-content .performance-detail .detail-meter .detail-meter-item {
+          margin-bottom: 1rem; }
+          #realme-c3-page .section-game-performance .main-content .performance-detail .detail-meter .detail-meter-item .label {
+            font-size: 1rem;
+            margin-bottom: 0.45rem; }
+          #realme-c3-page .section-game-performance .main-content .performance-detail .detail-meter .detail-meter-item .value {
+            font-size: 1rem;
+            margin-top: 0.1rem; }
+          #realme-c3-page .section-game-performance .main-content .performance-detail .detail-meter .detail-meter-item .meter-pointer {
+            height: 30px;
+            width: 95%; } }
+
+#realme-c3-page .section-battery {
+  position: relative;
+  background-color: #03B6EE;
+  /* === RESPONSIVE === */ }
+  #realme-c3-page .section-battery .phone-img {
+    position: absolute;
+    width: 59.140625%;
+    bottom: 6.9667%;
+    left: 20.4296875%; }
+  #realme-c3-page .section-battery .main-content {
+    position: absolute;
+    top: 5.98027%;
+    width: 100%; }
+    #realme-c3-page .section-battery .main-content .section-title {
+      margin-bottom: 0; }
+    #realme-c3-page .section-battery .main-content .section-sub-title {
+      margin-bottom: 2rem; }
+  #realme-c3-page .section-battery .battery-features {
+    position: absolute;
+    bottom: 4%;
+    width: 40%;
+    left: 30%; }
+    #realme-c3-page .section-battery .battery-features .battery-feature-list {
+      display: flex;
+      flex-wrap: wrap; }
+      #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item {
+        width: 33.33%;
+        flex-basis: 33.33%;
+        margin-bottom: 2rem; }
+        #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .feature-sub-title {
+          font-size: 1.75rem; }
+        #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .feature-title {
+          font-size: 3rem;
+          line-height: 1.15;
+          font-weight: 600;
+          margin-bottom: 1.5rem; }
+        #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .meter {
+          width: 82%;
+          height: 14px;
+          position: relative; }
+          #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .meter .metter-holder {
+            width: 100%;
+            height: 100%;
+            border-radius: 7px;
+            background-color: #76BCFD; }
+          #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .meter .metter-pointer {
+            z-index: 2;
+            width: 40%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: #69FFFF;
+            background: linear-gradient(to right, #69FFFF, #3AD9FF);
+            height: 100%;
+            border-radius: 7px; }
+  @media only screen and (max-width: 1920px) {
+    #realme-c3-page .section-battery {
+      width: 1920px;
+      margin-left: calc((100% - 1920px) / 2); }
+      #realme-c3-page .section-battery .main-content .section-title {
+        margin-bottom: 0; }
+      #realme-c3-page .section-battery .main-content .section-sub-title {
+        margin-bottom: 1.5rem; }
+      #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item {
+        margin-bottom: 1.5rem; }
+        #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .feature-sub-title {
+          font-size: 1.3125rem; }
+        #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .feature-title {
+          font-size: 2.25rem;
+          margin-bottom: 1.125rem; }
+        #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .meter {
+          width: 82%;
+          height: 10px; }
+          #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .meter .metter-holder {
+            border-radius: 5px; }
+          #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .meter .metter-pointer {
+            border-radius: 5px; } }
+  @media only screen and (max-width: 1368px) {
+    #realme-c3-page .section-battery {
+      width: 1680px;
+      margin-left: calc((100% - 1680px) / 2); }
+      #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item {
+        margin-bottom: 1.35rem; }
+        #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .feature-sub-title {
+          font-size: 1rem; }
+        #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .feature-title {
+          font-size: 1.75rem;
+          margin-bottom: 1rem; }
+        #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .meter {
+          height: 8px; }
+          #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .meter .metter-holder {
+            border-radius: 4px; }
+          #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .meter .metter-pointer {
+            border-radius: 4px; } }
+  @media only screen and (max-width: 1280px) {
+    #realme-c3-page .section-battery {
+      width: 1440px;
+      margin-left: calc((100% - 1440px) / 2); }
+      #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item {
+        margin-bottom: 1.25rem; }
+        #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .feature-sub-title {
+          font-size: 0.9rem; }
+        #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .feature-title {
+          font-size: 1.55rem;
+          margin-bottom: 0.9rem; }
+        #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .meter {
+          height: 8px; }
+          #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .meter .metter-holder {
+            border-radius: 4px; }
+          #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .meter .metter-pointer {
+            border-radius: 4px; } }
+  @media only screen and (max-width: 768px) {
+    #realme-c3-page .section-battery {
+      width: 100%;
+      margin-left: 0; }
+      #realme-c3-page .section-battery .phone-img {
+        position: absolute;
+        width: 100%;
+        bottom: 34.83%;
+        left: 0; }
+      #realme-c3-page .section-battery .main-content {
+        top: 7%;
+        width: 100%; }
+        #realme-c3-page .section-battery .main-content .section-title {
+          margin-bottom: 0; }
+        #realme-c3-page .section-battery .main-content .section-sub-title {
+          margin-bottom: 2rem; }
+      #realme-c3-page .section-battery .battery-features {
+        bottom: 6%;
+        width: 100%;
+        left: 0; }
+        #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item {
+          width: 50%;
+          flex-basis: 50%;
+          padding: 0 6%;
+          margin-bottom: 7vw; }
+          #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .feature-sub-title {
+            font-size: 1.35rem; }
+          #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .feature-title {
+            font-size: 2rem;
+            line-height: 1.15;
+            margin-bottom: 1.05rem; }
+          #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .meter {
+            width: 100%;
+            height: 12px;
+            position: relative; }
+            #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .meter .metter-holder {
+              border-radius: 6px; }
+            #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .meter .metter-pointer {
+              border-radius: 6px; } }
+  @media only screen and (max-width: 480px) {
+    #realme-c3-page .section-battery {
+      width: 100%;
+      margin-left: 0; }
+      #realme-c3-page .section-battery .phone-img {
+        position: absolute;
+        width: 100%;
+        bottom: 34.83%;
+        left: 0; }
+      #realme-c3-page .section-battery .main-content {
+        top: 7%;
+        width: 100%; }
+        #realme-c3-page .section-battery .main-content .section-title {
+          margin-bottom: 0; }
+        #realme-c3-page .section-battery .main-content .section-sub-title {
+          margin-bottom: 1rem; }
+      #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item {
+        width: 50%;
+        flex-basis: 50%;
+        padding: 0 4%;
+        margin-bottom: 9vw; }
+        #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .feature-sub-title {
+          font-size: 1rem; }
+        #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .feature-title {
+          font-size: 1.25rem;
+          line-height: 1.15;
+          margin-bottom: .5rem; }
+        #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .meter {
+          height: 8px; }
+          #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .meter .metter-holder {
+            border-radius: 4px; }
+          #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .meter .metter-pointer {
+            border-radius: 4px; } }
+  @media only screen and (max-width: 376px) {
+    #realme-c3-page .section-battery .main-content {
+      top: 7%;
+      width: 100%; }
+      #realme-c3-page .section-battery .main-content .section-title {
+        margin-bottom: 0; }
+      #realme-c3-page .section-battery .main-content .section-sub-title {
+        margin-bottom: 1rem; }
+    #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item {
+      width: 50%;
+      flex-basis: 50%;
+      padding: 0 4%;
+      margin-bottom: 9vw; }
+      #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .feature-sub-title {
+        font-size: 1rem; }
+      #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .feature-title {
+        font-size: 1.25rem;
+        line-height: 1.15;
+        margin-bottom: .5rem; }
+      #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .meter {
+        height: 6px; }
+        #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .meter .metter-holder {
+          border-radius: 3px; }
+        #realme-c3-page .section-battery .battery-features .battery-feature-list .feature-item .meter .metter-pointer {
+          border-radius: 3px; } }
+
+#realme-c3-page .section-screen {
+  position: relative;
+  height: 48.828125vw;
+  overflow: hidden;
+  /* === RESPONSIVE === */ }
+  #realme-c3-page .section-screen .curve-holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden; }
+    #realme-c3-page .section-screen .curve-holder:after {
+      content: '';
+      position: absolute;
+      width: 15vw;
+      top: 0;
+      right: -10vw;
+      height: 100%;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0), white, white); }
+    #realme-c3-page .section-screen .curve-holder .curve-img-holder {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0; }
+  #realme-c3-page .section-screen .phone-img {
+    position: absolute;
+    width: 29.8828125%;
+    top: 13.36%;
+    left: 46.875%; }
+  #realme-c3-page .section-screen .main-content {
+    width: 22%;
+    position: absolute;
+    top: 55%;
+    left: 25.78125%; }
+    #realme-c3-page .section-screen .main-content .screen-feature-list {
+      display: flex; }
+      #realme-c3-page .section-screen .main-content .screen-feature-list .feature-item {
+        flex-basis: 33.33%; }
+        #realme-c3-page .section-screen .main-content .screen-feature-list .feature-item .value {
+          color: #33D5FF;
+          font-size: 3.125rem;
+          margin-bottom: 0;
+          line-height: 1.35; }
+        #realme-c3-page .section-screen .main-content .screen-feature-list .feature-item .label {
+          color: #FFF;
+          font-size: 1.5rem;
+          line-height: 1.5; }
+  @media only screen and (max-width: 1920px) {
+    #realme-c3-page .section-screen {
+      width: 1920px;
+      height: 937.5px;
+      margin-left: calc((100% - 1920px) / 2); }
+      #realme-c3-page .section-screen .main-content .screen-feature-list .feature-item .value {
+        font-size: 2.34375rem; }
+      #realme-c3-page .section-screen .main-content .screen-feature-list .feature-item .label {
+        font-size: 1.125rem;
+        line-height: 1.35; } }
+  @media only screen and (max-width: 768px) {
+    #realme-c3-page .section-screen {
+      width: 100%;
+      margin-left: 0;
+      height: auto; }
+      #realme-c3-page .section-screen .curve-holder {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        overflow: hidden; }
+        #realme-c3-page .section-screen .curve-holder .curve-img-holder picture, #realme-c3-page .section-screen .curve-holder .curve-img-holder img {
+          width: 100%; }
+      #realme-c3-page .section-screen .phone-img {
+        position: absolute;
+        width: 88.0555%;
+        top: 31.18932%;
+        left: 10.5555%; }
+      #realme-c3-page .section-screen .main-content {
+        width: 100%;
+        top: auto;
+        bottom: 8%;
+        left: 0; }
+        #realme-c3-page .section-screen .main-content.mb-show {
+          top: 5%;
+          bottom: auto;
+          text-align: left; }
+        #realme-c3-page .section-screen .main-content .screen-feature-list .feature-item {
+          flex-basis: 33.33%;
+          text-align: center; }
+          #realme-c3-page .section-screen .main-content .screen-feature-list .feature-item .value {
+            font-size: 2rem;
+            line-height: 1.25; }
+          #realme-c3-page .section-screen .main-content .screen-feature-list .feature-item .label {
+            font-size: 1.25rem;
+            line-height: 1.5;
+            color: #222; } }
+  @media only screen and (max-width: 480px) {
+    #realme-c3-page .section-screen .main-content {
+      bottom: 6%; }
+      #realme-c3-page .section-screen .main-content.mb-show {
+        top: 5%;
+        bottom: auto; }
+      #realme-c3-page .section-screen .main-content .screen-feature-list .feature-item {
+        flex-basis: 33.33%;
+        text-align: center; }
+        #realme-c3-page .section-screen .main-content .screen-feature-list .feature-item .value {
+          font-size: 1.5rem;
+          line-height: 1.25; }
+        #realme-c3-page .section-screen .main-content .screen-feature-list .feature-item .label {
+          font-size: 1rem;
+          line-height: 1.5; } }
+  @media only screen and (max-width: 376px) {
+    #realme-c3-page .section-screen .main-content {
+      bottom: 6%; }
+      #realme-c3-page .section-screen .main-content.mb-show {
+        top: 5%;
+        bottom: auto; }
+      #realme-c3-page .section-screen .main-content .screen-feature-list .feature-item {
+        flex-basis: 33.33%;
+        text-align: center; }
+        #realme-c3-page .section-screen .main-content .screen-feature-list .feature-item .value {
+          font-size: 1.35rem;
+          line-height: 1.25; }
+        #realme-c3-page .section-screen .main-content .screen-feature-list .feature-item .label {
+          font-size: 0.9rem;
+          line-height: 1.5; } }
+
+@keyframes coverMove {
+  0% {
+    transform: translateX(-100%); }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes imageMove {
+  0% {
+    transform: translateX(100%); }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes phoneMove {
+  0% {
+    transform: translate(-40vw, -20vw); }
+  100% {
+    transform: translateX(0); } }
+
+#realme-c3-page .section-fingerprint {
+  position: relative;
+  overflow: hidden;
+  /* === RESPONSIVE === */ }
+  #realme-c3-page .section-fingerprint .main-content {
+    position: absolute;
+    top: 4vw;
+    left: 0;
+    right: 0; }
+  #realme-c3-page .section-fingerprint .phone-img, #realme-c3-page .section-fingerprint .zoomup-img {
+    position: absolute; }
+  #realme-c3-page .section-fingerprint .phone-img {
+    bottom: 0;
+    width: 35%;
+    left: 46.875%; }
+  #realme-c3-page .section-fingerprint .zoomup-img {
+    left: 27.34375%;
+    width: 17.96875%;
+    top: 34.032258%; }
+  @media only screen and (max-width: 1920px) {
+    #realme-c3-page .section-fingerprint {
+      width: 1920px;
+      margin-left: calc((100% - 1920px) / 2); }
+      #realme-c3-page .section-fingerprint .main-content {
+        top: 75px; } }
+  @media only screen and (max-width: 768px) {
+    #realme-c3-page .section-fingerprint {
+      width: 100%;
+      margin-left: 0; }
+      #realme-c3-page .section-fingerprint .main-content {
+        top: 12vw; }
+      #realme-c3-page .section-fingerprint .phone-img {
+        left: auto;
+        right: 0;
+        bottom: 0;
+        width: 89.72222%;
+        top: auto; }
+      #realme-c3-page .section-fingerprint .zoomup-img {
+        width: 76.66666%;
+        left: 11.3333%;
+        top: 26.3%; } }
+  @media only screen and (max-width: 480px) {
+    #realme-c3-page .section-fingerprint .main-content {
+      top: 11vw; } }
+  @media only screen and (max-width: 376px) {
+    #realme-c3-page .section-fingerprint .main-content {
+      top: 10vw; } }
+
+#realme-c3-page .section-simtray {
+  position: relative;
+  /* === RESPONSIVE === */ }
+  #realme-c3-page .section-simtray .main-content {
+    position: absolute;
+    top: 4vw;
+    left: 0;
+    right: 0; }
+  #realme-c3-page .section-simtray .effect-holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; }
+    #realme-c3-page .section-simtray .effect-holder .phone-img {
+      position: absolute;
+      bottom: 0;
+      width: 46.875%;
+      left: 33.359375%; }
+    #realme-c3-page .section-simtray .effect-holder .simtray-img {
+      position: absolute;
+      width: 13.359375%;
+      bottom: 13.245%;
+      left: 26.5625%; }
+  @media only screen and (max-width: 1920px) {
+    #realme-c3-page .section-simtray {
+      width: 1920px;
+      margin-left: calc((100% - 1920px) / 2); } }
+  @media only screen and (max-width: 768px) {
+    #realme-c3-page .section-simtray {
+      width: 100%;
+      margin-left: 0; }
+      #realme-c3-page .section-simtray .main-content {
+        left: 0;
+        top: 10vw; }
+      #realme-c3-page .section-simtray .effect-holder {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0; }
+        #realme-c3-page .section-simtray .effect-holder .phone-img {
+          position: absolute;
+          bottom: 7.521368%;
+          width: 87.7777%;
+          left: auto;
+          right: 0; }
+          #realme-c3-page .section-simtray .effect-holder .phone-img img, #realme-c3-page .section-simtray .effect-holder .phone-img picture {
+            width: 100%; }
+        #realme-c3-page .section-simtray .effect-holder .simtray-img {
+          position: absolute;
+          width: 35%;
+          bottom: 32.47863%;
+          left: 2.77778%; } }
+
+#realme-c3-page .section-colors {
+  padding: 5vw 0 4.6875vw; }
+  #realme-c3-page .section-colors .container .colors-img-holder {
+    position: relative; }
+    #realme-c3-page .section-colors .container .colors-img-holder .mold {
+      visibility: hidden;
+      position: static; }
+      #realme-c3-page .section-colors .container .colors-img-holder .mold img {
+        width: 100%; }
+    #realme-c3-page .section-colors .container .colors-img-holder .color-holder {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      transition: all ease-out 150ms;
+      opacity: 0; }
+      #realme-c3-page .section-colors .container .colors-img-holder .color-holder.active {
+        opacity: 1; }
+      #realme-c3-page .section-colors .container .colors-img-holder .color-holder img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%; }
+  #realme-c3-page .section-colors .container .colors-toggle {
+    text-align: center;
+    font-size: 1.875rem;
+    font-weight: 600;
+    padding: 3.7rem 0; }
+    #realme-c3-page .section-colors .container .colors-toggle .select-devide {
+      padding: 0 1.5rem; }
+    #realme-c3-page .section-colors .container .colors-toggle .select-option {
+      opacity: 0.3;
+      transition: all ease-out 150ms;
+      cursor: pointer; }
+      #realme-c3-page .section-colors .container .colors-toggle .select-option.active {
+        opacity: 1; }
+  #realme-c3-page .section-colors .container .color-sub {
+    position: relative;
+    font-size: 1.25rem;
+    text-align: center; }
+    #realme-c3-page .section-colors .container .color-sub .mold {
+      position: static;
+      visibility: hidden; }
+    #realme-c3-page .section-colors .container .color-sub .color-sub-item {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: all ease-out 150ms; }
+      #realme-c3-page .section-colors .container .color-sub .color-sub-item.active {
+        opacity: 1; }
+  @media only screen and (max-width: 1920px) {
+    #realme-c3-page .section-colors {
+      padding: 97.5px 0 90px; }
+      #realme-c3-page .section-colors .container .colors-toggle {
+        font-size: 1.40625rem;
+        padding: 2.775rem 0; }
+        #realme-c3-page .section-colors .container .colors-toggle .select-devide {
+          padding: 0 1.125rem; }
+      #realme-c3-page .section-colors .container .color-sub {
+        font-size: 0.9375rem; } }
+  @media only screen and (max-width: 768px) {
+    #realme-c3-page .section-colors {
+      padding: 0 0 8vw; }
+      #realme-c3-page .section-colors .container {
+        padding: 0; }
+        #realme-c3-page .section-colors .container .colors-toggle {
+          font-size: 1.75rem;
+          padding: 2.7rem 0; }
+          #realme-c3-page .section-colors .container .colors-toggle .select-devide {
+            padding: 0 1.35rem; }
+        #realme-c3-page .section-colors .container .color-sub {
+          padding: 0 15px;
+          font-size: 1rem; }
+          #realme-c3-page .section-colors .container .color-sub .color-sub-item {
+            padding: 0 15px; } }
+  @media only screen and (max-width: 480px) {
+    #realme-c3-page .section-colors {
+      padding: 0 0 18vw; }
+      #realme-c3-page .section-colors .container .colors-toggle {
+        font-size: 1.25rem;
+        padding: 2.5rem 0; }
+        #realme-c3-page .section-colors .container .colors-toggle .select-devide {
+          padding: 0 0.7rem; }
+      #realme-c3-page .section-colors .container .color-sub {
+        font-size: 0.9rem; } }
+  @media only screen and (max-width: 376px) {
+    #realme-c3-page .section-colors {
+      padding: 0 0 15vw; }
+      #realme-c3-page .section-colors .container .colors-toggle {
+        font-size: 1.15rem;
+        padding: 2.2rem 0; }
+        #realme-c3-page .section-colors .container .colors-toggle .select-devide {
+          padding: 0 0.5rem; }
+      #realme-c3-page .section-colors .container .color-sub {
+        font-size: 0.7rem; } }
+
+#realme-c3-page .section-design {
+  position: relative;
+  overflow: hidden;
+  /* === RESPONSIVE === */ }
+  #realme-c3-page .section-design .main-content {
+    top: 3.5vw;
+    position: absolute;
+    left: 0;
+    right: 0; }
+  #realme-c3-page .section-design .phone-img {
+    position: absolute;
+    bottom: 0;
+    width: 37.5%;
+    left: 32.03125%; }
+  @media only screen and (max-width: 1920px) {
+    #realme-c3-page .section-design {
+      width: 1920px;
+      margin-left: calc((100% - 1920px) / 2); }
+      #realme-c3-page .section-design .main-content {
+        top: 67.5px; } }
+  @media only screen and (max-width: 768px) {
+    #realme-c3-page .section-design {
+      width: 100%;
+      margin-left: 0; }
+      #realme-c3-page .section-design .main-content {
+        top: 10vw; }
+      #realme-c3-page .section-design .phone-img {
+        bottom: 0;
+        width: 96.5%;
+        left: 3.5%; } }
+
+#realme-c3-page .section-realme-ui {
+  padding: 4.3vw;
+  /* === RESPONSIVE ===*/ }
+  #realme-c3-page .section-realme-ui .screen-img {
+    padding: 2.34375vw 0 2.9rem; }
+  #realme-c3-page .section-realme-ui .realme-ui-explore {
+    text-align: center; }
+    #realme-c3-page .section-realme-ui .realme-ui-explore .realme-ui-logo {
+      width: 440px;
+      margin: auto;
+      padding-bottom: 1.5rem; }
+    #realme-c3-page .section-realme-ui .realme-ui-explore .seemore {
+      font-size: 1.875rem;
+      color: #FFD271;
+      font-weight: 600; }
+      #realme-c3-page .section-realme-ui .realme-ui-explore .seemore .plus-sign:after {
+        content: '+';
+        color: #FFD271;
+        font-size: 2.25rem; }
+  @media only screen and (max-width: 1920px) {
+    #realme-c3-page .section-realme-ui {
+      padding: 86px 0 80px; }
+      #realme-c3-page .section-realme-ui .screen-img {
+        padding: 45px 0; }
+      #realme-c3-page .section-realme-ui .realme-ui-explore .realme-ui-logo {
+        width: 330px;
+        padding-bottom: 1.125rem; }
+      #realme-c3-page .section-realme-ui .realme-ui-explore .seemore {
+        font-size: 1.40625rem;
+        cursor: pointer; }
+        #realme-c3-page .section-realme-ui .realme-ui-explore .seemore .plus-sign:after {
+          font-size: 1.6875rem; } }
+  @media only screen and (max-width: 768px) {
+    #realme-c3-page .section-realme-ui {
+      padding: 10vw 0; }
+      #realme-c3-page .section-realme-ui .screen-slider-holder {
+        padding: 4vw 30px; }
+        #realme-c3-page .section-realme-ui .screen-slider-holder .screen-slider {
+          padding: 5vw 12vw 16vw 12vw;
+          position: relative; }
+          #realme-c3-page .section-realme-ui .screen-slider-holder .screen-slider .screen-item picture, #realme-c3-page .section-realme-ui .screen-slider-holder .screen-slider .screen-item img {
+            width: 100%; }
+          #realme-c3-page .section-realme-ui .screen-slider-holder .screen-slider .slick-control {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-radius: 2px;
+            border: 4px solid #333;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            top: calc(50% - 15px);
+            background-color: transparent;
+            outline: none; }
+            #realme-c3-page .section-realme-ui .screen-slider-holder .screen-slider .slick-control.slick-next {
+              border-left: none;
+              border-bottom: none;
+              right: -20px;
+              animation: slickButtonFloat 0.75s 0.375s infinite linear; }
+            #realme-c3-page .section-realme-ui .screen-slider-holder .screen-slider .slick-control.slick-prev {
+              border-right: none;
+              border-top: none;
+              left: -20px;
+              animation: slickButtonFloat 0.75s infinite linear; }
+          #realme-c3-page .section-realme-ui .screen-slider-holder .screen-slider .slick-dots {
+            position: absolute;
+            bottom: 7vw;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center; }
+            #realme-c3-page .section-realme-ui .screen-slider-holder .screen-slider .slick-dots li button {
+              text-indent: -9999px;
+              background-color: #9B9B9B;
+              display: block;
+              height: 3px;
+              border: none;
+              width: 20px;
+              position: relative;
+              transition: all ease-in 220ms;
+              outline: none; }
+            #realme-c3-page .section-realme-ui .screen-slider-holder .screen-slider .slick-dots li.slick-active button {
+              background-color: #ffca12;
+              margin: 0 5px;
+              width: 38px;
+              height: 6px;
+              border-radius: 4px;
+              transform: translateY(-1.5px);
+              transition: all ease-out 220ms; }
+      #realme-c3-page .section-realme-ui .realme-ui-explore .realme-ui-logo {
+        max-width: 65%;
+        margin: auto;
+        padding-bottom: 1.25rem; }
+      #realme-c3-page .section-realme-ui .realme-ui-explore .seemore {
+        font-size: 1.875rem; }
+        #realme-c3-page .section-realme-ui .realme-ui-explore .seemore .plus-sign:after {
+          content: '+';
+          font-size: 2.25rem; } }
+  @media only screen and (max-width: 480px) {
+    #realme-c3-page .section-realme-ui {
+      padding: 10vw 0; }
+      #realme-c3-page .section-realme-ui .screen-slider-holder {
+        padding: 4vw 30px; }
+        #realme-c3-page .section-realme-ui .screen-slider-holder .screen-slider {
+          padding: 5vw 15px 16vw;
+          position: relative; }
+          #realme-c3-page .section-realme-ui .screen-slider-holder .screen-slider .screen-item picture, #realme-c3-page .section-realme-ui .screen-slider-holder .screen-slider .screen-item img {
+            width: 100%; }
+          #realme-c3-page .section-realme-ui .screen-slider-holder .screen-slider .slick-control {
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            border-radius: 2px;
+            border: 4px solid #333;
+            top: calc(50% - 12px); }
+            #realme-c3-page .section-realme-ui .screen-slider-holder .screen-slider .slick-control.slick-next {
+              border-left: none;
+              border-bottom: none;
+              right: -12px; }
+            #realme-c3-page .section-realme-ui .screen-slider-holder .screen-slider .slick-control.slick-prev {
+              border-right: none;
+              border-top: none;
+              left: -12px; }
+          #realme-c3-page .section-realme-ui .screen-slider-holder .screen-slider .slick-dots {
+            position: absolute;
+            bottom: 7vw;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center; }
+            #realme-c3-page .section-realme-ui .screen-slider-holder .screen-slider .slick-dots li button {
+              text-indent: -9999px;
+              background-color: #9B9B9B;
+              display: block;
+              height: 3px;
+              border: none;
+              width: 20px;
+              position: relative;
+              transition: all ease-in 220ms;
+              outline: none; }
+            #realme-c3-page .section-realme-ui .screen-slider-holder .screen-slider .slick-dots li.slick-active button {
+              background-color: #ffca12;
+              margin: 0 5px;
+              width: 34px;
+              height: 5px;
+              border-radius: 3px;
+              transform: translateY(-1px);
+              transition: all ease-out 220ms; }
+      #realme-c3-page .section-realme-ui .realme-ui-explore .realme-ui-logo {
+        max-width: 65%;
+        padding-bottom: 1.25rem; }
+      #realme-c3-page .section-realme-ui .realme-ui-explore .seemore {
+        font-size: 1.25rem; }
+        #realme-c3-page .section-realme-ui .realme-ui-explore .seemore .plus-sign:after {
+          font-size: 1.75rem; } }
+
+#realme-c3-page .section-quality {
+  position: relative;
+  overflow: hidden;
+  /* === RESPONSIVE === */ }
+  #realme-c3-page .section-quality .phone-img {
+    position: absolute;
+    bottom: 0;
+    left: 56.445%;
+    width: 22.2265625%; }
+  #realme-c3-page .section-quality .main-content {
+    position: absolute;
+    width: 30%;
+    left: 24%;
+    top: 17.2413%;
+    text-align: left; }
+    #realme-c3-page .section-quality .main-content .quality-test-list {
+      display: flex; }
+      #realme-c3-page .section-quality .main-content .quality-test-list .quality-item {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        flex-basis: 33.33%;
+        flex-shrink: 0;
+        margin: .5rem 0 1.75rem; }
+        #realme-c3-page .section-quality .main-content .quality-test-list .quality-item .value {
+          font-size: 2.875rem;
+          line-height: 1.25;
+          font-weight: 600; }
+        #realme-c3-page .section-quality .main-content .quality-test-list .quality-item .label {
+          font-size: 1.375rem; }
+    #realme-c3-page .section-quality .main-content .section-desc {
+      padding-right: 1.5rem; }
+    #realme-c3-page .section-quality .main-content .section-title {
+      white-space: nowrap; }
+  @media only screen and (max-width: 1920px) {
+    #realme-c3-page .section-quality {
+      width: 1920px;
+      margin-left: calc((100% - 1920px) / 2); }
+      #realme-c3-page .section-quality .main-content .quality-test-list .quality-item {
+        margin-bottom: 1.3125rem; }
+        #realme-c3-page .section-quality .main-content .quality-test-list .quality-item .value {
+          font-size: 2.15625rem;
+          line-height: 1.25; }
+        #realme-c3-page .section-quality .main-content .quality-test-list .quality-item .label {
+          font-size: 1.03125rem; } }
+  @media only screen and (max-width: 768px) {
+    #realme-c3-page .section-quality {
+      width: 100%;
+      margin-left: 0; }
+      #realme-c3-page .section-quality .phone-img {
+        bottom: 0;
+        left: 5.97255%;
+        width: 88.0555%; }
+      #realme-c3-page .section-quality .main-content {
+        width: 100%;
+        left: 0;
+        top: 7vw;
+        padding: 0 30px; }
+        #realme-c3-page .section-quality .main-content .quality-test-list.mb-show {
+          display: flex !important;
+          flex-wrap: wrap;
+          margin-top: 5vw; }
+          #realme-c3-page .section-quality .main-content .quality-test-list.mb-show .quality-item {
+            display: flex;
+            text-align: center;
+            flex-basis: 50%;
+            flex-shrink: 0;
+            margin: .5rem 0 1.75rem; }
+            #realme-c3-page .section-quality .main-content .quality-test-list.mb-show .quality-item .value {
+              font-size: 2.25rem;
+              line-height: 1.25; }
+            #realme-c3-page .section-quality .main-content .quality-test-list.mb-show .quality-item .label {
+              font-size: 1.25rem; }
+        #realme-c3-page .section-quality .main-content .section-desc {
+          padding-right: 1.5rem; }
+        #realme-c3-page .section-quality .main-content .section-title {
+          white-space: initial; } }
+  @media only screen and (max-width: 480px) {
+    #realme-c3-page .section-quality .main-content {
+      width: 100%;
+      left: 0;
+      top: 7vw;
+      padding: 0 15px; }
+      #realme-c3-page .section-quality .main-content .quality-test-list.mb-show {
+        margin-top: 3.5vw; }
+        #realme-c3-page .section-quality .main-content .quality-test-list.mb-show .quality-item {
+          margin: .25rem 0 1rem; }
+          #realme-c3-page .section-quality .main-content .quality-test-list.mb-show .quality-item .value {
+            font-size: 1.65rem;
+            line-height: 1.25; }
+          #realme-c3-page .section-quality .main-content .quality-test-list.mb-show .quality-item .label {
+            font-size: .9rem; }
+      #realme-c3-page .section-quality .main-content .section-desc {
+        padding-right: 1.5rem; }
+      #realme-c3-page .section-quality .main-content .section-title {
+        white-space: initial; } }
+  @media only screen and (max-width: 376px) {
+    #realme-c3-page .section-quality .main-content {
+      width: 100%;
+      left: 0;
+      top: 7vw;
+      padding: 0 15px; }
+      #realme-c3-page .section-quality .main-content .quality-test-list.mb-show {
+        margin-top: 3.5vw; }
+        #realme-c3-page .section-quality .main-content .quality-test-list.mb-show .quality-item {
+          margin: .25rem 0 1rem; }
+          #realme-c3-page .section-quality .main-content .quality-test-list.mb-show .quality-item .value {
+            font-size: 1.5rem;
+            line-height: 1.25; }
+          #realme-c3-page .section-quality .main-content .quality-test-list.mb-show .quality-item .label {
+            font-size: .8rem; }
+      #realme-c3-page .section-quality .main-content .section-desc {
+        padding-right: 1.5rem; }
+      #realme-c3-page .section-quality .main-content .section-title {
+        white-space: initial; } }
+
+.section-disclaimer {
+  padding: 2.5rem 0 2rem;
+  color: #777;
+  font-size: 1.25rem; }
+  .section-disclaimer .disclaimer-title {
+    font-size: 1.45rem;
+    color: #434343; }
+  .section-disclaimer p {
+    margin-bottom: 1rem;
+    line-height: 1.95rem; }
+  @media only screen and (max-width: 1368px) {
+    .section-disclaimer {
+      font-size: 1.15rem; }
+      .section-disclaimer .disclaimer-title {
+        font-size: 1.35rem; } }
+  @media only screen and (max-width: 1280px) {
+    .section-disclaimer {
+      font-size: 1.05rem; }
+      .section-disclaimer .disclaimer-title {
+        font-size: 1.25rem; } }
+  @media only screen and (max-width: 480px) {
+    .section-disclaimer {
+      font-size: .9rem; }
+      .section-disclaimer .disclaimer-title {
+        font-size: 1.05rem; }
+      .section-disclaimer p {
+        margin-bottom: .8rem;
+        line-height: 1.65rem; } }

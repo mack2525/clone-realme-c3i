@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap');
+
+/* === TYPOGRAPHY === */
+h1,h2,h3,h4{
+  margin: 0;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+
+  &:hover{
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+p{
+  margin: 0;
+}
+
+.white-txt{
+  color: $white !important;
+
+  *{
+    color: $white !important;
+  }
+}
+
+.main-title{
+  font-size: 50px;
+  line-height: 66px;
+  margin: 0;
+  font-weight: 600;
+  
+  @media #{$information-md-screen} {
+    font-size: 38px;
+    line-height: 50px;
+  }
+
+  /* === RESPONSIVE === */
+  @media #{$information-tablet} {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  @media #{$information-phone} {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  @media #{$information-sm-phone} {
+
+  }
+}
+
+.sub-title{
+  font-size: 36px;
+  line-height: 50px;
+  margin: 0;
+  font-weight: 600;
+
+  @media #{$information-md-screen} {
+    font-size: 27px;
+    line-height: 38px;
+  }
+
+  /* === RESPONSIVE === */
+  @media #{$information-tablet} {
+    font-size: 23px;
+    line-height: 32px;
+  }
+
+  @media #{$information-phone} {
+    font-size: 17px;
+    line-height: 25px;
+  }
+  @media #{$information-sm-phone} {
+
+  }
+}
+
+.desc{
+  font-size: 20px;
+  line-height: 36px;
+  color: #000;
+  opacity: 0.7;
+  margin-top: 30px;
+
+  &.mt-0{
+    margin-top: 0;
+  }
+
+  @media #{$information-md-screen} {
+    font-size: 15px;
+    line-height: 27px;
+    margin-top: 22.5px;
+  }
+
+  /* === RESPONSIVE === */
+  @media #{$information-tablet} {
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 18px;
+  }
+
+  @media #{$information-phone} {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 13px;
+  }
+  @media #{$information-sm-phone} {
+
+  }
+}

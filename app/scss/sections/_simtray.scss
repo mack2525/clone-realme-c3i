@@ -1,0 +1,78 @@
+#realme-c3-page{
+  .section-simtray{
+    position: relative;
+
+    .main-content{
+      position: absolute;
+      top: 4vw;
+      left: 0;
+      right: 0;
+    }
+
+    .effect-holder{
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+
+      .phone-img{
+        position: absolute;
+        bottom: 0;
+        width: 46.875%;
+        left: 33.359375%;
+      }
+
+      .simtray-img{
+        position: absolute;
+        width: 13.359375%;
+        bottom: 13.245%;
+        left: 26.5625%;
+      }
+    }
+
+    @media #{$information-lg-screen}{
+      width: 1920px;
+      margin-left: calc((100% - 1920px) / 2);
+    }
+
+    /* === RESPONSIVE === */
+    @media #{$information-tablet}{
+      width: 100%;
+      margin-left: 0;
+
+      .main-content{
+        left: 0;
+        top: 10vw;
+      }
+
+      .effect-holder{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+        .phone-img{
+          position: absolute;
+          bottom: 7.521368%;
+          width: 87.7777%;
+          left: auto;
+          right: 0;
+
+          img,picture{
+            width: 100%;
+          }
+        }
+
+        .simtray-img{
+          position: absolute;
+          width: 35%;
+          bottom: 32.47863%;
+          left: 2.77778%;
+        }
+      }
+    }
+  }
+}
+

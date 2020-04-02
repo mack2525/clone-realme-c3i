@@ -1,0 +1,192 @@
+#realme-c3-page{
+  .section-quality{
+    position: relative;
+    overflow: hidden;
+
+    .phone-img{
+      position: absolute;
+      bottom: 0;
+      left: 56.445%;
+      width: 22.2265625%;
+    }
+
+    .main-content{
+      position: absolute;
+      width: 30%;
+      left: 24%;
+      top: 17.2413%;
+      text-align: left;
+
+      .quality-test-list{
+        display: flex;
+
+        .quality-item{
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          flex-basis: 33.33%;
+          flex-shrink: 0;
+          margin: .5rem 0 1.75rem;
+
+          .value{
+            font-size: 2.875rem;
+            line-height: 1.25;
+            font-weight: 600;
+          }
+
+          .label{
+            font-size: 1.375rem;
+          }
+        }
+      }
+
+      .section-desc{
+        padding-right: 1.5rem;
+      }
+
+      .section-title{
+        white-space: nowrap;
+      }
+    }
+
+    @media #{$information-lg-screen}{
+      width: 1920px;
+      margin-left: calc((100% - 1920px) / 2);
+
+      .main-content{
+        .quality-test-list{
+          .quality-item{
+            margin-bottom: 1.3125rem;
+
+            .value{
+              font-size: 2.15625rem;
+              line-height: 1.25;
+            }
+
+            .label{
+              font-size: 1.03125rem;
+            }
+          }
+        }
+      }
+    }
+
+    /* === RESPONSIVE === */
+    @media #{$information-tablet}{
+      width: 100%;
+      margin-left: 0;
+
+      .phone-img{
+        bottom: 0;
+        left: 5.97255%;
+        width: 88.0555%;
+      }
+
+      .main-content{
+        width: 100%;
+        left: 0;
+        top: 7vw;
+        padding: 0 30px;
+
+        .quality-test-list.mb-show{
+          display: flex !important;
+          flex-wrap: wrap;
+          margin-top: 5vw;
+
+          .quality-item{
+            display: flex;
+            text-align: center;
+            flex-basis: 50%;
+            flex-shrink: 0;
+            margin: .5rem 0 1.75rem;
+
+            .value{
+              font-size: 2.25rem;
+              line-height: 1.25;
+            }
+
+            .label{
+              font-size: 1.25rem;
+            }
+          }
+        }
+
+        .section-desc{
+          padding-right: 1.5rem;
+        }
+
+        .section-title{
+          white-space: initial;
+        }
+      }
+    }
+
+    @media #{$information-phone}{
+      .main-content{
+        width: 100%;
+        left: 0;
+        top: 7vw;
+        padding: 0 15px;
+
+        .quality-test-list.mb-show{
+          margin-top: 3.5vw;
+
+          .quality-item{
+            margin: .25rem 0 1rem;
+
+            .value{
+              font-size: 1.65rem;
+              line-height: 1.25;
+            }
+
+            .label{
+              font-size: .9rem;
+            }
+          }
+        }
+
+        .section-desc{
+          padding-right: 1.5rem;
+        }
+
+        .section-title{
+          white-space: initial;
+        }
+      }
+    }
+
+    @media #{$information-sm-phone}{
+      .main-content{
+        width: 100%;
+        left: 0;
+        top: 7vw;
+        padding: 0 15px;
+
+        .quality-test-list.mb-show{
+          margin-top: 3.5vw;
+
+          .quality-item{
+            margin: .25rem 0 1rem;
+
+            .value{
+              font-size: 1.5rem;
+              line-height: 1.25;
+            }
+
+            .label{
+              font-size: .8rem;
+            }
+          }
+        }
+
+        .section-desc{
+          padding-right: 1.5rem;
+        }
+
+        .section-title{
+          white-space: initial;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,252 @@
+#realme-c3-page{
+  .section-chipset{
+    position: relative;
+    background-color: #060D17;
+    overflow: hidden;
+
+    .chip-img{
+      position: absolute;
+      top: 0.4%;
+      left: 42.4%;
+      width: 26.5%;
+
+      .chip-effect-holder,.chip-img-holder{
+        width: 100%;
+      }
+
+      .chip-effect-holder{
+        &.is-shinning{
+          animation: shiningEffect infinite linear 2.25s;
+        }
+      }
+
+      .chip-img-holder{
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    .main-content{
+      position: absolute;
+      width: 40%;
+      left: 30%;
+      top: 52.6%;
+      color: $white;
+      text-align: left;
+      padding: 0 2.6%;
+
+      .chipset-feature-list{
+        margin-top: 4.15rem;
+        width: 96%;
+        display: flex;
+        justify-content: space-between;
+
+        .feature-item{
+          flex-basis: 24%;
+
+          .line-1{
+            font-size: 1.875rem;
+            line-height: 1.15;
+            font-weight: 600;
+
+            .highlight{
+              font-size: 2.375rem;
+            }
+          }
+
+          .line-2{
+            font-size: 1.125rem;
+          }
+        }
+      }
+    }
+
+    @media #{$information-lg-screen}{
+      width: 1920px;
+      margin-left: calc((100% - 1920px) / 2);
+
+      .main-content{
+        .chipset-feature-list{
+          margin-top: 3.1125rem;
+
+          .feature-item{
+
+            .line-1{
+              font-size: 1.40625rem;
+
+              .highlight{
+                font-size: 1.78125rem;
+              }
+            }
+
+            .line-2{
+              font-size: 0.84375rem;
+            }
+          }
+        }
+      }
+    }
+
+    /* === RESPONSIVE === */
+    @media #{$information-tablet}{
+      width: 100%;
+      margin-left: 0;
+
+      .chip-img{
+        top: 59.10138%;
+        left: 1.38888%;
+        width: 76.666667%;
+
+        .chip-effect-holder{
+          &.is-shinning{
+            animation: shiningEffect infinite linear 2.25s;
+          }
+        }
+
+        .chip-img-holder{
+          position: absolute;
+          z-index: 2;
+          top: 0;
+          left: 0;
+        }
+      }
+
+      .main-content{
+        width: 100%;
+        left: 0;
+        top: 6.221198%;
+        padding: 0 30px;
+
+        .chipset-feature-list{
+          margin-top: 1.5rem;
+          width: 100%;
+          flex-wrap: wrap;
+
+          .feature-item{
+            flex-basis: 50%;
+            margin-bottom: 1.75rem;
+
+            .line-1{
+              font-size: 1.75rem;
+              line-height: 1.5;
+              margin-bottom: .75rem;
+
+              .highlight{
+                font-size: 1.75rem;
+              }
+            }
+
+            .line-2{
+              font-size: 1.1rem;
+            }
+          }
+        }
+      }
+    }
+
+    @media #{$information-phone}{
+      .chip-img{
+        top: 59.10138%;
+        left: 1.38888%;
+        width: 76.666667%;
+
+        .chip-effect-holder{
+          &.is-shinning{
+            animation: shiningEffect infinite linear 2.25s;
+          }
+        }
+
+        .chip-img-holder{
+          position: absolute;
+          z-index: 2;
+          top: 0;
+          left: 0;
+        }
+      }
+
+      .main-content{
+        width: 100%;
+        left: 0;
+        top: 6.221198%;
+        padding: 0 15px;
+
+        .chipset-feature-list{
+          margin-top: 1.5rem;
+          width: 100%;
+          flex-wrap: wrap;
+
+          .feature-item{
+            flex-basis: 50%;
+            margin-bottom: 1.5rem;
+
+            .line-1{
+              font-size: 1.25rem;
+              line-height: 1.35;
+              margin-bottom: .25rem;
+
+              .highlight{
+                font-size: 1.25rem;
+              }
+            }
+
+            .line-2{
+              font-size: .9rem;
+            }
+          }
+        }
+      }
+    }
+
+    @media #{$information-sm-phone}{
+      .main-content{
+        .chipset-feature-list{
+          margin-top: 1.25rem;
+
+          .feature-item{
+            margin-bottom: 1.35rem;
+
+            .line-1{
+              font-size: 1.15rem;
+              line-height: 1.25;
+              margin-bottom: .2rem;
+
+              .highlight{
+                font-size: 1.15rem;
+              }
+            }
+
+            .line-2{
+              font-size: .85rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* === Support Content / Classes === */
+@keyframes shiningEffect {
+  0%{
+    opacity: 1;
+    -moz-transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+  }
+  50%{
+    opacity: 0.9;
+    -moz-transform: scale(0.94);
+    -webkit-transform: scale(0.94);
+    transform: scale(0.94);
+    -webkit-filter: brightness(0.8);
+    filter: brightness(0.8);
+  }
+  100%{
+    opacity: 1;
+    -moz-transform: scale(0.98);
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+  }
+}

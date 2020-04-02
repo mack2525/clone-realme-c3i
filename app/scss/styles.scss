@@ -1,0 +1,41 @@
+// 3rd Party Vendor Stylesheet
+//@import "vendors/fontawesome/font-awesome";
+
+// Website Core Stylesheet Guideline
+@import "common/variables";
+@import "common/elements";
+@import "common/helpers";
+@import "common/typography";
+
+// Website Common Components
+@import "components/core";
+@import "components/ui";
+@import "components/footer";
+@import "components/header";
+@import "components/modals";
+@import "components/yt-modal";
+@import "components/custom-menu";
+
+// realme c3
+@import "sections/common";
+@import "sections/banner";
+@import "sections/main-feature";
+@import "sections/tvc";
+@import "sections/news";
+@import "sections/camera";
+@import "sections/camera-gallery";
+@import "sections/camera-closeup";
+@import "sections/camera-ai";
+@import "sections/chipset";
+@import "sections/game-performance";
+@import "sections/battery";
+@import "sections/screen";
+@import "sections/fingerprint";
+@import "sections/simtray";
+@import "sections/colors";
+@import "sections/design";
+@import "sections/realme-ui";
+@import "sections/quality";
+@import "sections/disclaimer";
+
+
