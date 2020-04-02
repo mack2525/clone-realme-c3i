@@ -29,7 +29,7 @@
     "gulp-sass": "^3.2.1",
     "jquery-ui": "^1.12.1",
     "jquery-ui-bundle": "^1.12.1-migrate",
-    "lodash": "^4.17.5",
+    "lodash": "^4.17.13",
     "postcss-color-function": "4.0.1",
     "postcss-hexrgba": "1.0.0",
     "postcss-import": "11.0.0",
